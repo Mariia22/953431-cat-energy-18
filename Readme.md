@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Mariia Ushakova](https://up.htmlacademy.ru/adaptive/18/user/953431).
-* Наставник: `Неизвестно`.
+- Студент: [Mariia Ushakova](https://up.htmlacademy.ru/adaptive/18/user/953431).
+- Наставник: [Артем Михайлов](https://htmlacademy.ru/profile/id327277).
 
 ---
 
