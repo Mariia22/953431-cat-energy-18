@@ -1,12 +1,132 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
 
-  </body>
+<body>
+
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="191" height="39"
+        alt="Питание для котов 'Cat Energy'">
+    </a>
+    <nav class="page-nav">
+      <button class="page-nav__toggle" type="button">Меню</button>
+      <div class="page-nav__wrapper">
+        <ul class="page-nav__list site-menu">
+          <li class="site-menu__item site-menu__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="site-menu__item">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-menu__item">
+            <a href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Питание для котов 'Cat Energy'</h1>
+    <section class="programm">
+      <h2 class="programm__title">Функциональное питание для котов</h2>
+      <b class="programm__slogan">Занялся собой? Займись котом!</b>
+      <img class="programm__logo-image" src="https://via.placeholder.com/150x150" width="280" height="270"
+        alt="Полезный корм для котов 'Cat Energy'">
+      <a class="programm_selection" href="form.html">Подобрать программу</a>
+    </section>
+    <section class="diet">
+      <ul class="diet__options">
+        <li class="diet__item">
+          <img class="diet__logo" src="https://via.placeholder.com/150x150" width="35" height="49"
+            alt="Программа похудения">
+          <h3>Похудение</h3>
+          <p class="diet__description">
+            Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
+            поможет вашему питомцу сбросить лишний вес.
+          </p>
+          <hr class="diet_separator">
+          <b class="diet__title">Каталог Slim</b>
+          <a href="#" class="diet__button"><img src="https://via.placeholder.com/150x150" width="35" height="49"
+              alt="Перейти в каталог питания для похудения"></a>
+        </li>
+        <li class="diet__item">
+          <img class="diet__logo" src="https://via.placeholder.com/150x150" width="35" height="49"
+            alt="Программа набора массы">
+          <h3>Набор массы</h3>
+          <p class="diet__description">
+            Заработать авторитет среди дворовых котов и даже собак?
+            Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+          </p>
+          <hr class="diet__separator">
+          <b class="diet__title">Каталог Pro</b>
+          <a href="#" class="diet__button"><img src="https://via.placeholder.com/150x150" width="35" height="49"
+              alt="Перейти в каталог питания для набора массы"></a>
+        </li>
+      </ul>
+    </section>
+    <section class="advantages">
+      <div class="advantages__wrapper">
+        <h2 class="advantages__title">Как это работает</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <img class="advantages__logo" src="https://via.placeholder.com/150x150" width="26" height="29"
+              alt="Содержит полезные питательные вещества">
+            <p class="advantages__text">Функциональное питание содержит только полезные питательные вещества.</p>
+          </li>
+          <li class="advantages__item">
+            <img class="advantages__logo" src="https://via.placeholder.com/150x150" width="26" height="29"
+              alt="Выпускается в виде порошка">
+            <p class="advantages__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+          </li>
+          <li class="advantages__item">
+            <img class="advantages__logo" src="https://via.placeholder.com/150x150" width="26" height="29"
+              alt="Замена приема обычной еды">
+            <p class="advantages__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
+          </li>
+          <li class="advantages__item">
+            <img class="advantages__logo" src="https://via.placeholder.com/150x150" width="26" height="29"
+              alt="Быстрый результат">
+            <p class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__logo logo">
+      <a class="logo__link">
+        <img class="logo__image" src="https://via.placeholder.com/150x150" width="128" height="24"
+          alt="Питание для котов 'Cat Energy'">
+      </a>
+    </div>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Контакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+            Инстаграмме</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"
+        aria-label="Переход на сайт HTML Академии">
+        <!-- <svg class="copyright__logo-image" width="27" height="34"
+        </svg> -->
+      </a>
+    </div>
+  </footer>
+</body>
+
 </html>
