@@ -1,0 +1,17 @@
+.present__wrapper {
+  background: url(#{$img-path}/gift-photo-mobile@1x.jpg) no-repeat;
+  background-color: $green-back;
+  margin: 39px 20px 35px;
+  width: 280px;
+  height: 289px;
+}
+
+.present__text {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 20px;
+  text-align: center;
+  color: $white-back;
+  margin: 190px 60px 43px;
+}
