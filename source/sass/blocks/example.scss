@@ -1,0 +1,29 @@
+.example {
+  background-color: $grey-back;
+  padding: 33px 20px 39px 20px;
+}
+
+.example__level {
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 24px;
+  color: $text-color;
+  text-align: center;
+}
+
+.example__text {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 12px;
+  text-align: center;
+}
+
+.example__total {
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $text-color;
+}

@@ -1,0 +1,23 @@
+.program {
+  background: url(#{$img-path}/gift-photo-mobile@1x.jpg) no-repeat;
+  background-color: $green-back;
+}
+
+
+.program__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+  text-align: center;
+  color: $white-back;
+  margin: 29px 38px 19px 37px;
+}
+
+.program__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: normal;
+  text-align: center;
+  color: $white-back;
+  text-transform: uppercase;
+}

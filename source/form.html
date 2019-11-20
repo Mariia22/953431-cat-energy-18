@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -55,7 +56,7 @@
           <label class="form__radio" for="radio-3">Не знаю(нужен ваш совет)</label>
         </fieldset>
         <fieldset class="form__contacts">
-          <h3 class="form__contacts-title">Контактные данные (владельца кота)</h3>
+          <h3 class="form__title">Контактные данные (владельца кота)</h3>
           <label class="form__label"><span>E-mail:*</span>
             <input type="email" class="form__field" name="name" placeholder="kuklachev@gmail.com" required>
             <img class="form__field-logo" src="https://via.placeholder.com/150x150" width="18" height="14"
@@ -68,12 +69,12 @@
           </label>
         </fieldset>
         <fieldset class="form__comment">
-          <h3 class="form__comment-title">Комментарий</h3>
+          <h3 class="form__title">Комментарий</h3>
           <textarea class="form__textarea" rows="6" id="for-textarea"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="form__additional">
-          <h3 class="form__additional-title">Дополнительно</h3>
+          <h3 class="form__title">Дополнительно</h3>
           <input type="checkbox" id="check-1" value="sweetener" checked>
           <label class="form__check" for="check-1">Сахарозаменитель</label>
           <input type="checkbox" id="check-2" value="water">
@@ -83,7 +84,7 @@
           <input type="checkbox" id="check-4" value="vitamins">
           <label class="form__check" for="check-4">Витамины</label>
         </fieldset>
-        <button class="order form__order">Отправить заявку</button>
+        <button class="form__order">Отправить заявку</button>
         <p class="form__note"><sup>*</sup>— Обязательные поля</p>
       </form>
     </section>
