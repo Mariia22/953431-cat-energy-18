@@ -1,6 +1,23 @@
 .program {
   background: url(#{$img-path}/gift-photo-mobile@1x.jpg) no-repeat;
   background-color: $green-back;
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (min-width: $tablet) {
+  .program {
+    background: 0 0;
+    padding-left: 120px;
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .program {
+    width: 1300px;
+  }
 }
 
 .program__title {
