@@ -19,6 +19,8 @@ a {
 }
 
 li {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -35,7 +37,7 @@ h3 {
   font-size: 24px;
   font-weight: normal;
   font-style: normal;
-  line-height: 37px;
+  line-height: 24px;
   text-align: left;
   color: $text-color;
 }

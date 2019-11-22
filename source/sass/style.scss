@@ -1,9 +1,9 @@
+@import "normalize.scss";
 @import "variables.scss";
 @import "font.scss";
 @import "blocks/additional.scss";
 @import "blocks/advantages.scss";
 @import "blocks/button.scss";
-@import "blocks/catalog.scss";
 @import "blocks/contact.scss";
 @import "blocks/diet.scss";
 @import "blocks/example.scss";
@@ -11,10 +11,8 @@
 @import "blocks/main.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/page-header.scss";
-@import "blocks/page-main.scss";
 @import "blocks/page-nav.scss";
 @import "blocks/present.scss";
 @import "blocks/product.scss";
 @import "blocks/program.scss";
 @import "blocks/select-program.scss";
-@import "blocks/social.scss";

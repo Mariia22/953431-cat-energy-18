@@ -1,10 +1,21 @@
-.diet-item {
+.diet__item {
   background-color: $grey-back;
   width: 280px;
   height: 266px;
-  margin: 22px 20px 20px 20px;
-  padding: 24px 21px 22px 36px;
+  margin-top: 22px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding-top: 24px;
+  padding-right: 21px;
+  padding-bottom: 22px;
+  padding-left: 36px;
   text-align: left;
+}
+
+.diet__head {
+  text-transform: uppercase;
+  line-height: 37px;
 }
 
 .diet__description {

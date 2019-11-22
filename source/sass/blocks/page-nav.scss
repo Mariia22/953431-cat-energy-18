@@ -1,6 +1,9 @@
 .site-menu__item {
   background-color: $white-back;
-  padding: 24px 123px;
+  padding-top: 24px;
+  padding-right: 123px;
+  padding-bottom: 24px;
+  padding-left: 123px;
 
   a {
     font-size: 20px;

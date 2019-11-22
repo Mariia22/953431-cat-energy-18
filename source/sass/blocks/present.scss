@@ -2,6 +2,10 @@
   background: url(#{$img-path}/gift-photo-mobile@1x.jpg) no-repeat;
   background-color: $green-back;
   margin: 39px 20px 35px;
+  margin-top: 39px;
+  margin-right: 20px;
+  margin-bottom: 35px;
+  margin-left: 20px;
   width: 280px;
   height: 289px;
 }
@@ -13,5 +17,8 @@
   line-height: 20px;
   text-align: center;
   color: $white-back;
-  margin: 190px 60px 43px;
+  margin-top: 190px;
+  margin-right: 60px;
+  margin-bottom: 43px;
+  margin-left: 60px;
 }
