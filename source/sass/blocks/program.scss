@@ -17,6 +17,7 @@
   height: 305px;
   margin: 0 auto;
 }
+
 .program__title {
   font-size: 36px;
   line-height: 36px;
@@ -44,15 +45,18 @@
     padding-left: 120px;
     width: 768px;
   }
+
   .program::before {
     display: none;
   }
+
   .program__title {
     font-size: 60px;
     line-height: 60px;
     text-align: left;
     color: $text-color;
   }
+
   .program__slogan {
     font-size: 20px;
     line-height: 20px;
