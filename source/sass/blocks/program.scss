@@ -1,25 +1,22 @@
 .program {
-  background: url(#{$img-path}/gift-photo-mobile@1x.jpg) no-repeat;
-  background-color: $green-back;
   width: 320px;
   margin: 0 auto;
   position: relative;
 }
 
-@media (min-width: $tablet) {
-  .program {
-    background: 0 0;
-    padding-left: 120px;
-    width: 768px;
-  }
+.program::before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background: url(#{$img-path}/gift-photo-mobile@1x.jpg) no-repeat;
+  background-size: contain;
+  background-color: $green-back;
+  width: 320px;
+  height: 305px;
+  margin: 0 auto;
 }
-
-@media (min-width: $desktop) {
-  .program {
-    width: 1300px;
-  }
-}
-
 .program__title {
   font-size: 36px;
   line-height: 36px;
@@ -40,4 +37,31 @@
   text-align: center;
   color: $white-back;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet) {
+  .program {
+    padding-left: 120px;
+    width: 768px;
+  }
+  .program::before {
+    display: none;
+  }
+  .program__title {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: $text-color;
+  }
+  .program__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    color: $text-color;
+  }
+}
+
+@media (min-width: $desktop) {
+  .program {
+    width: 1300px;
+  }
 }

@@ -1,3 +1,15 @@
+.product {
+  margin: 0;
+}
+
+@media (min-width: $tablet) {
+  .product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 .page-main__title {
   margin-top: 32px;
   margin-right: 44px;
@@ -6,10 +18,24 @@
 }
 
 .product__item {
-  padding-top: 25px;
-  padding-right: 20px;
-  padding-bottom: 25px;
-  padding-left: 20px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-right: 19px;
+  padding-left: 19px;
+}
+
+@media (min-width: $tablet) {
+  .product__item {
+    width: 324px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .product__item {
+    width: 245px;
+  }
 }
 
 .product__title {

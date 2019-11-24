@@ -15,10 +15,6 @@
   background-color: $green-back;
   width: 280px;
   height: 40px;
-  margin-top: 3px;
-  margin-right: 20px;
-  margin-bottom: 22px;
-  margin-left: 20px;
   padding-top: 13px;
   padding-right: 73px;
   padding-bottom: 13px;
@@ -30,6 +26,17 @@
   color: $white-back;
   text-transform: uppercase;
   border: 0;
+}
+
+@media (min-width: $tablet) {
+  .program__order {
+    width: 245px;
+    height: 52px;
+    padding-top: 17px;
+    padding-right: 29px;
+    padding-bottom: 15px;
+    padding-left: 26px;
+  }
 }
 
 .order {
@@ -52,6 +59,19 @@
   text-transform: uppercase;
   border: 0;
 }
+
+@media (min-width: $tablet) {
+  .order {
+    width: 249px;
+    height: 40px;
+    padding-top: 13px;
+    padding-right: 53px;
+    padding-bottom: 12px;
+    padding-left: 55px;
+
+  }
+}
+
 
 .product__show-link {
   background-color: $grey-back;
