@@ -8,14 +8,19 @@
 
 @media (min-width: $tablet) {
   .advantages {
+    width: 768px;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 55px;
+    padding-top: 32px;
     margin-bottom: 51px;
+    border-bottom: 1px solid #ededed;
   }
 }
 
 @media (min-width: $desktop) {
   .advantages {
+    width: 1440px;
     padding-left: 110px;
     padding-right: 110px;
   }
@@ -28,23 +33,27 @@
 
 @media (min-width: $tablet) {
   .advantages__list {
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 }
 
 .advantages__item {
+  width: 270px;
   background-color: $white-back;
   margin-bottom: 20px;
   text-align: left;
   font-family: "Arial", sans-serif;
   color: $grey-text;
-  width: 256px;
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
 @media (min-width: $tablet) {
   .advantages__item {
-    flex-direction: row;
-    width: 197px;
+    width: 314px;
   }
 }
