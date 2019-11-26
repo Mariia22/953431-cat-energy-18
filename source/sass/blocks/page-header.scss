@@ -1,8 +1,3 @@
-.page-header {
-  padding-right: 22px;
-  padding-left: 20px;
-}
-
 .page-header__logo-image {
   height: 39px;
 }
@@ -11,15 +6,24 @@
   .page-header {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 47px;
+    padding-bottom: 68px;
   }
 
   .page-header__logo-image {
     height: 59px;
+    width: 174px;
   }
 }
 
 @media (min-width: $desktop) {
+  .page-header {
+    padding-top: 53px;
+    padding-bottom: 34px;
+  }
+
   .page-header__logo-image {
     height: 60px;
   }
