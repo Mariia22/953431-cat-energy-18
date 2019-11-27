@@ -14,11 +14,9 @@
 .program__order {
   background-color: $green-back;
   width: 280px;
-  height: 40px;
+  margin-top: 3px;
   padding-top: 13px;
-  padding-right: 73px;
   padding-bottom: 13px;
-  padding-left: 73px;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
@@ -31,26 +29,17 @@
 @media (min-width: $tablet) {
   .program__order {
     width: 245px;
-    height: 52px;
     padding-top: 17px;
-    padding-right: 29px;
     padding-bottom: 15px;
-    padding-left: 26px;
   }
 }
 
 .order {
+  display: block;
   background-color: $green-back;
   width: 280px;
-  height: 40px;
-  margin-top: 14px;
-  margin-right: 20px;
-  margin-bottom: 25px;
-  margin-left: 20px;
   padding-top: 12px;
-  padding-right: 111px;
   padding-bottom: 12px;
-  padding-left: 111px;
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
@@ -63,27 +52,16 @@
 @media (min-width: $tablet) {
   .order {
     width: 249px;
-    height: 40px;
     padding-top: 13px;
-    padding-right: 53px;
     padding-bottom: 12px;
-    padding-left: 55px;
   }
 }
-
 
 .product__show-link {
   background-color: $grey-back;
   width: 280px;
-  height: 40px;
-  margin-top: 22px;
-  margin-right: 20px;
-  margin-bottom: 25px;
-  margin-left: 20px;
   padding-top: 13px;
-  padding-right: 94px;
   padding-bottom: 12px;
-  padding-left: 97px;
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;

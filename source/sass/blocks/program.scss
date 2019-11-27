@@ -14,9 +14,8 @@
   background: url(#{$img-path}/gift-photo-mobile@1x.jpg) no-repeat;
   background-size: contain;
   background-color: $green-back;
-  width: 320px;
+  width: 100%;
   height: 305px;
-  margin: 0 auto;
 }
 
 .program__title {
@@ -56,12 +55,14 @@
     line-height: 60px;
     text-align: left;
     color: $text-color;
+    margin-bottom: 33px;
   }
 
   .program__slogan {
     font-size: 20px;
     line-height: 20px;
     color: $text-color;
+    margin-bottom: 48px;
   }
 }
 

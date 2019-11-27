@@ -1,22 +1,17 @@
-.page-footer__wrapper {
-  width: 320px;
-  margin: 0 auto;
+.page-footer {
   background-color: $grey-back;
-  padding-top: 39px;
-  padding-bottom: 22px;
+  width: 100%;
+}
+
+.page-footer__container {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: $tablet) {
-  .page-footer__wrapper {
-    width: 768px;
-    display: flex;
+  .page-footer__container {
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-}
-
-@media (min-width: $desktop) {
-  .page-footer__wrapper {
-    width: 1440px;
   }
 }

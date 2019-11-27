@@ -1,24 +1,5 @@
-.diet {
-  width: 320px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-@media (min-width: $tablet) {
-  .diet {
-    width: 768px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-bottom: 21px;
-  }
-}
-
 @media (min-width: $desktop) {
   .diet {
-    width: 1440px;
-    padding-left: 110px;
-    padding-right: 110px;
     padding-top: 80px;
   }
 }
@@ -28,7 +9,7 @@
   flex-direction: column;
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $desktop) {
   .diet__options {
     flex-direction: row;
     flex-wrap: wrap;
@@ -37,13 +18,11 @@
 
 .diet__item {
   background-color: $grey-back;
-  width: 280px;
+  width: 240px;
   height: 266px;
   margin-bottom: 22px;
   padding-top: 24px;
-  padding-right: 21px;
   padding-bottom: 22px;
-  padding-left: 36px;
   text-align: left;
 }
 
@@ -56,9 +35,8 @@
 
 @media (min-width: $desktop) {
   .diet__item {
-    width: 570px;
+    width: 490px;
     margin-right: 80px;
-    margin-bottom: 79px;
   }
 }
 
