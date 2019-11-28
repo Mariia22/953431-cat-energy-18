@@ -1,5 +1,17 @@
 .page-footer {
   background-color: $grey-back;
-  padding-top: 39px;
-  padding-bottom: 22px;
+  width: 100%;
+}
+
+.page-footer__container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet) {
+  .page-footer__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

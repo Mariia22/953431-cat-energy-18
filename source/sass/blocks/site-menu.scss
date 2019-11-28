@@ -1,0 +1,27 @@
+@media (min-width: $tablet) {
+  .site-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 438px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .site-menu {
+    width: 480px;
+  }
+}
+
+.site-menu__item {
+  background-color: $white-back;
+
+  a {
+    font-size: 20px;
+    line-height: 20px;
+    color: $text-color;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}

@@ -1,16 +1,43 @@
+@media (min-width: $desktop) {
+  .diet {
+    padding-top: 80px;
+  }
+}
+
+.diet__options {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $desktop) {
+  .diet__options {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .diet__item {
   background-color: $grey-back;
-  width: 280px;
+  width: 240px;
   height: 266px;
-  margin-top: 22px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  margin-bottom: 22px;
   padding-top: 24px;
-  padding-right: 21px;
   padding-bottom: 22px;
-  padding-left: 36px;
   text-align: left;
+}
+
+@media (min-width: $tablet) {
+  .diet__item {
+    width: 708px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .diet__item {
+    width: 490px;
+    margin-right: 80px;
+  }
 }
 
 .diet__head {

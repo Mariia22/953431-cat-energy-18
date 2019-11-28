@@ -1,15 +1,13 @@
-.site-menu__item {
-  background-color: $white-back;
-  padding-top: 24px;
-  padding-right: 123px;
-  padding-bottom: 24px;
-  padding-left: 123px;
+.page-nav {
+  display: flex;
+  flex-direction: column;
+}
 
-  a {
-    font-size: 20px;
-    line-height: 20px;
-    color: $text-color;
-    text-transform: uppercase;
-    text-align: center;
+@media (min-width: $tablet) {
+  .page-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }

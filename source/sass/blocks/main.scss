@@ -8,17 +8,19 @@ body {
   line-height: 18px;
   color: $grey-text;
   background-color: $white-back;
+  min-width: 320px;
 }
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 a {
   text-decoration: none;
 }
 
-li {
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
