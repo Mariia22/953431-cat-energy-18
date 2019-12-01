@@ -1,8 +1,14 @@
 .page-nav__toggle {
-  background: url(#{$img-path}/icon-mobile-menu.svg) no-repeat;
-  background-size: contain;
-  width: 25px;
-  height: 19px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  border: 0;
+  display: block;
+  cursor: pointer;
+  width: 65px;
+  height: 65px;
+  background-color: $white-back;
 }
 
 @media (min-width: $tablet) {

@@ -1,3 +1,31 @@
+.site-menu {
+  font-weight: bold;
+
+}
+
+.site-menu__item {
+  display: block;
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-size: 20px;
+  line-height: 20px;
+  color: $text-color;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  background-color: $white-back;
+  border-bottom: 1px solid $grey-form;
+
+  &:hover {
+    opacity: $opacity-hover;
+  }
+
+  &:active {
+    opacity: $opacity-active;
+  }
+}
+
 @media (min-width: $tablet) {
   .site-menu {
     display: flex;
@@ -11,17 +39,5 @@
 @media (min-width: $desktop) {
   .site-menu {
     width: 480px;
-  }
-}
-
-.site-menu__item {
-  background-color: $white-back;
-
-  a {
-    font-size: 20px;
-    line-height: 20px;
-    color: $text-color;
-    text-transform: uppercase;
-    text-align: center;
   }
 }
