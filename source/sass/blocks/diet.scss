@@ -17,13 +17,26 @@
 }
 
 .diet__item {
+  position: relative;
   background-color: $grey-back;
   width: 240px;
-  height: 266px;
   margin-bottom: 22px;
   padding-top: 24px;
   padding-bottom: 22px;
+  padding-left: 22px;
+  padding-right: 22px;
   text-align: left;
+}
+
+.diet__item::before {
+  position: absolute;
+  content: "";
+  background-color: $green-back;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 24px;
+  left: 24px;
 }
 
 @media (min-width: $tablet) {
@@ -43,11 +56,42 @@
 .diet__head {
   text-transform: uppercase;
   line-height: 37px;
+  margin-right: 0;
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 22px;
+  padding-left: 72px;
+}
+
+.diet__head--slim::before {
+  position: absolute;
+  content: "";
+  background:url(#{$img-path}/icon-cat-slim.svg) center no-repeat;
+  width: 50px;
+  height: 50px;
+  top: 22px;
+  left: 30px;
+}
+
+.diet__head--pro::before {
+  position: absolute;
+  content: "";
+  background:url(#{$img-path}/icon-cat-pro.svg) center no-repeat;
+  width: 67px;
+  height: 50px;
+  top: 32px;
+  left: 14px;
 }
 
 .diet__description {
   font-family: "Arial", sans-serif;
   color: $grey-text;
+  border-bottom: 1px solid $grey-form;
+  padding-bottom: 23px;
+}
+
+.diet__order {
+  position: relative;
 }
 
 .diet__title {
@@ -56,4 +100,15 @@
   font-style: normal;
   line-height: 16px;
   color: $text-color;
+  text-transform: uppercase;
+}
+
+.diet__title::after {
+  position: absolute;
+  content: "";
+  background:url(#{$img-path}/icon-right-arrow-long.svg) center no-repeat;
+  width: 25px;
+  height: 12px;
+  top: 2px;
+  left: 98px;
 }

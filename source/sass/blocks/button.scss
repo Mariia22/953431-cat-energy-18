@@ -19,10 +19,12 @@
 
 .program__order {
   background-color: $green-back;
+  display: block;
   width: 280px;
   margin-top: 3px;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  margin-bottom: 22px;
+  padding-top: 14px;
+  padding-bottom: 11px;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;

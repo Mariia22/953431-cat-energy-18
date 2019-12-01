@@ -26,14 +26,13 @@
 }
 
 .advantages__item {
-  width: 240px;
+  width: 280px;
   background-color: $white-back;
   margin-bottom: 20px;
   text-align: left;
   font-family: "Arial", sans-serif;
   color: $grey-text;
   display: flex;
-  flex-wrap: wrap;
 }
 
 @media (min-width: $tablet) {
@@ -46,4 +45,19 @@
   .advantages__item {
     width: 240px;
   }
+}
+
+.advantages__title {
+  margin-top: 0px;
+}
+
+.advantages__logo {
+  background-color: $green-back;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.advantages__text {
+  margin: 0;
 }
