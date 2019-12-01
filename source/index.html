@@ -42,8 +42,12 @@
     <section class="program wrapper">
       <h2 class="program__title">Функциональное питание для котов</h2>
       <b class="program__slogan">Занялся собой? Займись котом!</b>
-      <img class="program__logo-image" src="https://via.placeholder.com/150x150" width="280" height="270"
-        alt="Полезный корм для котов 'Cat Energy'" />
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
+        <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png">
+        <img class="program__logo-image" src="img/index-can-mobile@1x.png" width="280" height="270"
+          alt="Полезный корм для котов 'Cat Energy'" />
+      </picture>
       <a class="program__order" href="form.html">Подобрать программу</a>
     </section>
     <section class="diet wrapper">
