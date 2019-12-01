@@ -1,22 +1,28 @@
-.site-menu {
-  font-weight: bold;
-
-}
-
 .site-menu__item {
   display: block;
   width: 100%;
   padding-top: 24px;
   padding-bottom: 24px;
+  background-color: $white-back;
+  border-bottom: 1px solid $grey-form;
+  text-align: center;
+}
+
+.site-menu__item:first-child {
+  border-top: 1px solid $grey-form;
+}
+
+.site-menu__link {
   font-size: 20px;
   line-height: 20px;
+  font-weight: bold;
   color: $text-color;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  background-color: $white-back;
-  border-bottom: 1px solid $grey-form;
+}
 
+.site-menu a[href] {
   &:hover {
     opacity: $opacity-hover;
   }
@@ -33,6 +39,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 438px;
+  }
+
+  .site-menu__item--active {
+    border-bottom: 1px solid $green-back;
   }
 }
 
