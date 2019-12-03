@@ -18,5 +18,17 @@
     padding-left: 110px;
     padding-right: 110px;
     width: 1200px;
+    position: relative;
+  }
+
+  .body__wrapper::before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    background-image: url(index-background-desktop@2x.jpg);
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 697px;
   }
 }

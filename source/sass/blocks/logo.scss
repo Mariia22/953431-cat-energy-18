@@ -4,3 +4,9 @@
   padding-bottom: 31px;
   border-bottom: 1px solid $grey-form;
 }
+
+@media (min-width: $tablet) {
+  .logo {
+    border-bottom: 0;
+  }
+}

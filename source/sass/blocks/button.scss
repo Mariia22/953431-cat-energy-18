@@ -18,6 +18,7 @@
 }
 
 .program__order {
+  font-family: "Oswald", "Arial", sans-serif;
   background-color: $green-back;
   display: block;
   width: 280px;
@@ -27,7 +28,6 @@
   padding-bottom: 11px;
   font-size: 14px;
   line-height: 18px;
-  font-weight: normal;
   text-align: center;
   color: $white-back;
   text-transform: uppercase;
@@ -39,6 +39,9 @@
     width: 245px;
     padding-top: 17px;
     padding-bottom: 15px;
+    margin-top: 48px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 

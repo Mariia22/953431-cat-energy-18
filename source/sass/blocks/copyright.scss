@@ -6,16 +6,22 @@
 }
 
 .copyright__link {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
   line-height: 16px;
   color: $grey-text;
-  text-align: left;
+  padding-top: 8px;
 }
 
-.ccopyright__link-foto {
-  fill: $grey-logo;
-  padding-top: 19px;
+@media (min-width: $tablet) {
+  .copyright {
+    padding-top: 39px;
+    padding-bottom: 31px;
+  }
+
+  .copyright__link {
+    margin-right: 23px;
+  }
 }

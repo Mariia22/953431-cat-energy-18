@@ -1,19 +1,6 @@
-@media (min-width: $desktop) {
-  .diet {
-    padding-top: 80px;
-  }
-}
-
 .diet__options {
   display: flex;
   flex-direction: column;
-}
-
-@media (min-width: $desktop) {
-  .diet__options {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
 }
 
 .diet__item {
@@ -39,22 +26,9 @@
   left: 24px;
 }
 
-@media (min-width: $tablet) {
-  .diet__item {
-    width: 708px;
-    margin-bottom: 30px;
-  }
-}
-
-@media (min-width: $desktop) {
-  .diet__item {
-    width: 490px;
-    margin-right: 80px;
-  }
-}
-
 .diet__head {
   text-transform: uppercase;
+  font-size: 36px;
   line-height: 37px;
   margin-right: 0;
   margin-top: 0;
@@ -111,4 +85,79 @@
   height: 12px;
   top: 2px;
   left: 98px;
+}
+
+@media (min-width: $tablet) {
+  .diet__item {
+    width: 708px;
+    margin-bottom: 30px;
+  }
+
+  .diet__item::before {
+    width: 200px;
+    height: 200px;
+    top: 36px;
+    left: 527px;
+  }
+
+  .diet__head {
+    padding-left: 0;
+  }
+
+  .diet__head--slim::before {
+    width: 200px;
+    height: 200px;
+    top: 30px;
+    left: 527px;
+  }
+
+  .diet__head--pro::before {
+    width: 268px;
+    height: 113px;
+    top: 70px;
+    left: 470px;
+  }
+
+  .diet__title {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .diet__title::after {
+    width: 24px;
+    height: 11px;
+    top: 2px;
+    left: 118px;
+  }
+
+  .diet__description {
+    width: 380px;
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: 0;
+    margin-bottom: 61px;
+  }
+
+  .diet__description--pro {
+    width: 344px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .diet {
+    padding-top: 80px;
+  }
+
+  .diet__options {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .diet__item {
+    width: 490px;
+    margin-right: 80px;
+  }
+
+
 }
