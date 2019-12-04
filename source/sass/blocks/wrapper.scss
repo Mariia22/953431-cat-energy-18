@@ -24,11 +24,15 @@
   .body__wrapper::before {
     position: absolute;
     content: "";
-    z-index: -1;
-    background-image: url(index-background-desktop@2x.jpg);
+    z-index: -2;
+    background-image: url(#{$img-path}/index-background-desktop@1x.jpg);
+    background-color: $green-back;
+    background-position-x: right;
+    background-repeat: no-repeat;
     top: 0;
     right: 0;
     width: 50%;
     height: 697px;
+
   }
 }

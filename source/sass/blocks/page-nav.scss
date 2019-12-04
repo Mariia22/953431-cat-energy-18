@@ -26,7 +26,6 @@
 }
 
 @media (max-width: $mobile-width-only) {
-
   .page-nav--closed .site-menu__item {
     display: none;
   }
@@ -51,6 +50,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    z-index: 1;
   }
 
   .page-nav__wrapper {

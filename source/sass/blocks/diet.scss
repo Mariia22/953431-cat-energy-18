@@ -145,19 +145,55 @@
 }
 
 @media (min-width: $desktop) {
-  .diet {
-    padding-top: 80px;
-  }
 
   .diet__options {
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 79px;
   }
 
   .diet__item {
     width: 490px;
-    margin-right: 80px;
+    padding-left: 52px;
   }
 
+  .diet__item:first-child {
+    margin-right: 50px;
+  }
 
+  .diet__item::before {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+  }
+
+  .diet__head--slim::before {
+    width: 70px;
+    height: 97px;
+    top: 40px;
+    left: 66px;
+  }
+
+  .diet__head--pro::before {
+    width: 134px;
+    height: 55px;
+    top: 70px;
+    left: 34px;
+  }
+
+  .diet__head {
+    padding-top: 41px;
+    margin-bottom: 75px;
+    text-align: center;
+  }
+
+  .diet__description {
+    width: 462px;
+    margin-bottom: 36px;
+  }
+
+  .diet__description--pro {
+    width: 444px;
+  }
 }

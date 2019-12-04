@@ -64,5 +64,12 @@
 @media (min-width: $desktop) {
   .site-menu {
     width: 480px;
+    justify-content: flex-end;
+  }
+
+  .site-menu__link {
+    font-size: 20px;
+    line-height: 25px;
+    color: $white-back;
   }
 }
