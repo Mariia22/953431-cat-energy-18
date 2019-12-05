@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
+  <script>
+    document.createElement("picture");
+
+  </script>
+  <script src="picturefill.min.js" async></script>
 </head>
 
 <body>
@@ -44,10 +49,12 @@
         <li class="product__item">
           <a class="product__link" href="#">
             <picture>
-              <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png">
-              <source media="(min-width: 1440px)" srcset="img/chicken-small-desktop@1x.png">
-              <img class="product__image" src="img/chicken-small-mobile@1x.jpg" width="140" height="144"
-                alt="'Cat Energy', курица, 500 гр.">
+              <source media="(min-width: 768px)"
+                srcset="img/chicken-small-tablet@1x.png, img/chicken-small-tablet@2x.png">
+              <source media="(min-width: 1440px)"
+                srcset="img/chicken-small-desktop@1x.png, img/chicken-small-desktop@2x.png">
+              <img class="product__image" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg"
+                width="140" height="144" alt="'Cat Energy', курица, 500 гр.">
             </picture>
           </a>
           <div class="product__table">
@@ -72,10 +79,11 @@
         <li class="product__item">
           <a class="product__link" href="#">
             <picture>
-              <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png">
-              <source media="(min-width: 1440px)" srcset="img/chicken-big-desktop@1x.png">
-              <img class="product__image" src="img/chicken-big-mobile@1x.jpg" width="140" height="144"
-                alt="'Cat Energy', курица, 1000 гр.">
+              <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png, img/chicken-big-tablet@2x.png">
+              <source media="(min-width: 1440px)"
+                srcset="img/chicken-big-desktop@1x.png,img/chicken-big-desktop@2x.png">
+              <img class="product__image" src="img/chicken-big-mobile@1x.jpg" srcet="img/chicken-big-mobile@2x.jpg"
+                width="140" height="144" alt="'Cat Energy', курица, 1000 гр.">
             </picture>
           </a>
           <div class="product__table">
@@ -100,10 +108,10 @@
         <li class="product__item">
           <a class="product__link" href="#">
             <picture>
-              <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png">
-              <source media="(min-width: 1440px)" srcset="img/fish-small-desktop@1x.png">
-              <img class="product__image" src="img/fish-small-mobile@1x.jpg" width="140" height="144"
-                alt="'Cat Energy', рыба, 500 гр.">
+              <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png, img/fish-small-tablet@2x.png">
+              <source media="(min-width: 1440px)" srcset="img/fish-small-desktop@1x.png, img/fish-small-desktop@2x.png">
+              <img class="product__image" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg"
+                width="140" height="144" alt="'Cat Energy', рыба, 500 гр.">
             </picture>
           </a>
           <div class="product__table">
@@ -128,10 +136,10 @@
         <li class="product__item">
           <a class="product__link" href="#">
             <picture>
-              <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png">
-              <source media="(min-width: 1440px)" srcset="img/fish-big-tablet@1x.png">
-              <img class="product__image" src="img/fish-big-mobile@1x.jpg" width="140" height="144"
-                alt="'Cat Energy', рыба, 1000 гр.">
+              <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png, img/fish-big-tablet@2x.png">
+              <source media="(min-width: 1440px)" srcset="img/fish-big-tablet@1x.png, img/fish-big-tablet@2x.png">
+              <img class="product__image" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg"
+                width="140" height="144" alt="'Cat Energy', рыба, 1000 гр.">
             </picture>
           </a>
           <div class="product__table">
@@ -156,10 +164,12 @@
         <li class="product__item">
           <a class="product__link" href="#">
             <picture>
-              <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png">
-              <source media="(min-width: 1440px)" srcset="img/buckwheat-small-desktop@1x.png">
-              <img class="product__image" src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144"
-                alt="'Cat Energy', гречка, 500 гр.">
+              <source media="(min-width: 768px)"
+                srcset="img/buckwheat-small-tablet@1x.png, img/buckwheat-small-tablet@2x.png">
+              <source media="(min-width: 1440px)"
+                srcset="img/buckwheat-small-desktop@1x.png, img/buckwheat-small-desktop@2x.png">
+              <img class="product__image" src="img/buckwheat-small-mobile@1x.jpg"
+                srcset="img/buckwheat-small-mobile@2x.jpg" width="140" height="144" alt="'Cat Energy', гречка, 500 гр.">
             </picture>
           </a>
           <div class="product__table">
@@ -184,10 +194,12 @@
         <li class="product__item">
           <a class="product__link" href="#">
             <picture>
-              <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png">
-              <source media="(min-width: 1440px)" srcset="img/buckwheat-big-desktop@1x.png">
-              <img class="product__image" src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144"
-                alt="'Cat Energy', гречка, 1000 гр.">
+              <source media="(min-width: 768px)"
+                srcset="img/buckwheat-big-tablet@1x.png, img/buckwheat-big-tablet@2x.png">
+              <source media="(min-width: 1440px)"
+                srcset="img/buckwheat-big-desktop@1x.png, img/buckwheat-big-desktop@2x.png">
+              <img class="product__image" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg"
+                width="140" height="144" alt="'Cat Energy', гречка, 1000 гр.">
             </picture>
           </a>
           <div class="product__table">
@@ -212,10 +224,10 @@
         <li class="product__item">
           <a class="product__link" href="#">
             <picture>
-              <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png">
-              <source media="(min-width: 1440px)" srcset="img/rice-small-desktop@1x.png">
-              <img class="product__image" src="img/rice-small-mobile@1x.jpg" width="140" height="144"
-                alt="'Cat Energy',рис, 500 гр.">
+              <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png, img/rice-small-tablet@2x.png">
+              <source media="(min-width: 1440px)" srcset="img/rice-small-desktop@1x.png, img/rice-small-desktop@2x.png">
+              <img class="product__image" src="img/rice-small-mobile@1x.jpg" srcsets="img/rice-small-mobile@1x.jpg"
+                width="140" height="144" alt="'Cat Energy',рис, 500 гр.">
             </picture>
           </a>
           <div class="product__table">
