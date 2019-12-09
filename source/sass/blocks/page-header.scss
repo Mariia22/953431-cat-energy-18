@@ -1,5 +1,5 @@
 .page-header {
-  padding-top: 11px;
+  padding-top: 12px;
   position: relative;
 }
 
@@ -13,19 +13,20 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 47px;
+    padding-top: 24px;
   }
 
   .page-header__logo-image {
     height: 59px;
     width: 174px;
+    margin-right: 13px;
   }
 }
 
 @media (min-width: $desktop) {
   .page-header {
-    padding-top: 53px;
-    padding-bottom: 34px;
+    position: absolute;
+    top: 30px;
   }
 
   .page-header__logo-image {

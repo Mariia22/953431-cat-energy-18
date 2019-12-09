@@ -1,7 +1,7 @@
 .page-nav__toggle {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 234px;
   z-index: 2;
   border: 0;
   display: block;
@@ -22,9 +22,9 @@
   background-color: $green-back;
   display: block;
   width: 280px;
-  margin-top: 3px;
+  margin-top: 298px;
   margin-bottom: 22px;
-  padding-top: 14px;
+  padding-top: 13px;
   padding-bottom: 11px;
   font-size: 14px;
   line-height: 18px;
@@ -37,9 +37,10 @@
 @media (min-width: $tablet) {
   .program__order {
     width: 245px;
-    padding-top: 17px;
+    padding-top: 15px;
     padding-bottom: 15px;
     margin-top: 48px;
+    margin-left: 90px;
     font-size: 20px;
     line-height: 20px;
   }

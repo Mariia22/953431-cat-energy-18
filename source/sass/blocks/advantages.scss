@@ -10,7 +10,7 @@
 .advantages__item {
   width: 280px;
   background-color: $white-back;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
   text-align: left;
   font-family: "Arial", sans-serif;
   color: $grey-text;
@@ -19,6 +19,7 @@
 
 .advantages__title {
   margin-top: 0;
+  margin-bottom: 25px;
 }
 
 .advantages__logo {
@@ -30,7 +31,7 @@
 
 .advantages__text {
   margin-top: 0;
-  width: 192px;
+  width: 200px;
 }
 
 @media (min-width: $tablet) {
@@ -74,6 +75,7 @@
   .advantages__title {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 70px;
   }
 
   .advantages__logo {

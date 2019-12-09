@@ -8,7 +8,7 @@
   background-color: $grey-back;
   width: 240px;
   margin-bottom: 22px;
-  padding-top: 24px;
+  padding-top: 22px;
   padding-bottom: 22px;
   padding-left: 22px;
   padding-right: 22px;
@@ -26,34 +26,39 @@
   left: 24px;
 }
 
+.diet__item:last-child {
+  margin-bottom: 16px;
+}
+
 .diet__head {
   text-transform: uppercase;
-  font-size: 36px;
+  font-size: 24px;
   line-height: 37px;
   margin-right: 0;
   margin-top: 0;
   margin-left: 0;
-  margin-bottom: 22px;
-  padding-left: 72px;
+  margin-bottom: 29px;
+  padding-left: 70px;
+  padding-top: 5px;
 }
 
-.diet__head--slim::before {
+.diet__head--slim {
   position: absolute;
   content: "";
   background: url(#{$img-path}/icon-cat-slim.svg) center no-repeat;
   width: 50px;
   height: 50px;
   top: 22px;
-  left: 30px;
+  left: 20px;
 }
 
-.diet__head--pro::before {
+.diet__head--pro {
   position: absolute;
   content: "";
   background: url(#{$img-path}/icon-cat-pro.svg) center no-repeat;
   width: 67px;
   height: 50px;
-  top: 32px;
+  top: 18px;
   left: 14px;
 }
 
@@ -61,7 +66,7 @@
   font-family: "Arial", sans-serif;
   color: $grey-text;
   border-bottom: 1px solid $grey-form;
-  padding-bottom: 23px;
+  padding-bottom: 28px;
 }
 
 .diet__order {
@@ -84,38 +89,54 @@
   width: 25px;
   height: 12px;
   top: 2px;
-  left: 98px;
+  left: 95px;
 }
 
 @media (min-width: $tablet) {
-  .diet__item {
+  .diet__options {
+    margin-top: 505px;
     width: 708px;
+  }
+
+  .diet__item {
+    padding-top: 76px;
+    padding-left: 54px;
+    padding-bottom: 65px;
     margin-bottom: 30px;
+    width: 632px;
+    background-color: $grey-back;
+  }
+
+  .diet__item:last-child {
+    margin-bottom: 41px;
   }
 
   .diet__item::before {
     width: 200px;
     height: 200px;
-    top: 36px;
-    left: 527px;
+    top: 96px;
+    left: 445px;
   }
 
   .diet__head {
     padding-left: 0;
+    padding-top: 0;
+    margin-bottom: 26px;
+    font-size: 36px;
   }
 
-  .diet__head--slim::before {
-    width: 200px;
-    height: 200px;
-    top: 30px;
-    left: 527px;
+  .diet__head--slim {
+    width: 195px;
+    height: 195px;
+    top: 82px;
+    left: 447px;
   }
 
-  .diet__head--pro::before {
+  .diet__head--pro {
     width: 268px;
     height: 113px;
-    top: 70px;
-    left: 470px;
+    top: 130px;
+    left: 410px;
   }
 
   .diet__title {
@@ -127,8 +148,8 @@
   .diet__title::after {
     width: 24px;
     height: 11px;
-    top: 2px;
-    left: 118px;
+    top: 3px;
+    left: 128px;
   }
 
   .diet__description {
@@ -136,12 +157,13 @@
     font-size: 16px;
     line-height: 24px;
     border-bottom: 0;
-    margin-bottom: 61px;
+    margin-bottom: 27px;
   }
 
   .diet__description--pro {
     width: 344px;
   }
+
 }
 
 @media (min-width: $desktop) {
@@ -149,6 +171,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 79px;
+    margin-top: 250px;
   }
 
   .diet__item {

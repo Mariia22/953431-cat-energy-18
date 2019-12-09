@@ -18,27 +18,5 @@
     padding-left: 110px;
     padding-right: 110px;
     width: 1200px;
-    position: relative;
-  }
-
-  .body__wrapper::before {
-    position: absolute;
-    content: "";
-    z-index: -2;
-    background-image: url(#{$img-path}/index-background-desktop@1x.jpg);
-    background-color: $green-back;
-    background-position-x: right;
-    background-repeat: no-repeat;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 697px;
-  }
-
-  @media (min-resolution: $retina-dppx) {
-    .body__wrapper::before {
-      background-image: url(#{$img-path}/index-background-desktop@2x.jpg);
-      background-size: 50% auto;
-    }
   }
 }

@@ -1,7 +1,7 @@
 .social {
   border-bottom: 1px solid $grey-form;
-  padding-top: 24px;
-  padding-bottom: 21px;
+  padding-top: 22px;
+  padding-bottom: 17px;
 }
 
 .social__list {
@@ -10,6 +10,18 @@
   justify-content: space-between;
   width: 130px;
   margin: 0 auto;
+}
+
+.social__link {
+  position: relative;
+}
+
+.social__link--instagram {
+  left: -5px;
+}
+
+.social__link--facebook {
+  left: -5px;
 }
 
 @media (min-width: $tablet) {
