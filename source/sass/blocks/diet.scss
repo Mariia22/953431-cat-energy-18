@@ -101,7 +101,7 @@
   .diet__item {
     padding-top: 76px;
     padding-left: 54px;
-    padding-bottom: 65px;
+    padding-bottom: 63px;
     margin-bottom: 30px;
     width: 632px;
     background-color: $grey-back;
@@ -112,8 +112,8 @@
   }
 
   .diet__item::before {
-    width: 200px;
-    height: 200px;
+    width: 203px;
+    height: 196px;
     top: 96px;
     left: 445px;
   }
@@ -163,59 +163,70 @@
   .diet__description--pro {
     width: 344px;
   }
-
 }
 
 @media (min-width: $desktop) {
   .diet__options {
+    width: 1200px;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 79px;
+    margin-bottom: 29px;
     margin-top: 250px;
   }
 
   .diet__item {
-    width: 490px;
-    padding-left: 52px;
-  }
-
-  .diet__item:first-child {
-    margin-right: 50px;
+    width: 495px;
+    padding-left: 42px;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   .diet__item::before {
     width: 100px;
     height: 100px;
     top: 47px;
-    left: 52px;
+    left: 47px;
   }
 
-  .diet__head--slim::before {
+  .diet__head--slim {
     width: 70px;
     height: 97px;
     top: 40px;
-    left: 66px;
+    left: 59px;
   }
 
-  .diet__head--pro::before {
+  .diet__head--pro {
     width: 134px;
     height: 55px;
     top: 70px;
-    left: 34px;
+    left: 39px;
   }
 
   .diet__head {
-    padding-top: 41px;
-    margin-bottom: 75px;
-    text-align: center;
+    margin-bottom: 72px;
+    padding-left: 170px;
   }
 
   .diet__description {
-    width: 462px;
-    margin-bottom: 36px;
+    width: 480px;
+    margin-bottom: 2px;
   }
 
   .diet__description--pro {
-    width: 444px;
+    padding-left: 7px;
+  }
+
+  .diet__order {
+    padding-left: 8px;
+  }
+
+  .diet__title::after {
+    top: 6px;
+    left: 139px;
+  }
+
+  .diet__item:last-child {
+    margin-bottom: 105px;
   }
 }

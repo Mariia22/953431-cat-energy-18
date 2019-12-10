@@ -47,10 +47,6 @@
     width: 438px;
   }
 
-  .site-menu__item--active {
-    border-bottom: 1px solid $green-back;
-  }
-
   .site-menu__item:first-child {
     border-top: 0;
   }
@@ -85,12 +81,16 @@
 @media (min-width: $desktop) {
   .site-menu {
     width: 480px;
-    padding-left: 540px;
+    padding-left: 530px;
   }
 
   .site-menu__link {
     font-size: 20px;
     line-height: 25px;
     color: $white-back;
+  }
+
+  .site-menu__item--active::after {
+    bottom: 14px;
   }
 }

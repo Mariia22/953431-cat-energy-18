@@ -30,6 +30,19 @@
   }
 
   .copyright__link {
-    margin-right: 23px;
+    padding-top: 1px;
+    margin-right: 51px;
+  }
+
+  .copyright__link-foto {
+    right: -4px;
+    top: 22px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .copyright__link-foto {
+    right: -9px;
+    top: 24px;
   }
 }

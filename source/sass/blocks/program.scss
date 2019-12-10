@@ -104,7 +104,7 @@
     z-index: -1;
     height: 697px;
     width: 50%;
-    top: 12px;
+    top: 0;
     right: 0;
     left: auto;
     margin: 0;
@@ -114,9 +114,23 @@
     position: absolute;
     content: "";
     z-index: -1;
-    top: -81px;
-    left: 488px;
+    top: 102px;
+    left: 550px;
     height: 499px;
     width: 552px;
+  }
+
+  .program__title {
+    margin-top: 183px;
+    margin-left: 76px;
+  }
+
+  .program__slogan {
+    margin-left: 39px;
+  }
+
+  .program__order {
+    margin-top: 50px;
+    margin-left: 75px;
   }
 }

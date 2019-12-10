@@ -3,14 +3,6 @@
   flex-direction: column;
 }
 
-@media (min-width: $tablet) {
-  .product {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-}
-
 .page-main__title {
   margin-top: 32px;
   margin-right: 44px;
@@ -19,42 +11,30 @@
 }
 
 .product__item {
+  position: relative;
   width: 280px;
   display: flex;
   flex-wrap: wrap;
-  border-bottom: 1px solid $grey-line;
-  border-left: 1px solid $grey-line;
-  border-right: 1px solid $grey-line;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
-.product__item:first-child {
-  border-top: 1px solid $grey-line;
-}
-
-@media (min-width: $tablet) {
-  .product__item {
-    width: 284px;
-  }
-}
-
-@media (min-width: $desktop) {
-  .product__item {
-    width: 245px;
-  }
+.product__item::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -170px;
+  height: 1px;
+  width: 300%;
+  background-color: #ededed;
 }
 
 .product__table {
-  width: 140px;
-  margin: 0;
-  margin-bottom: 23px;
   border-collapse: collapse;
 }
 
 .product__title {
   line-height: 20px;
   width: 90px;
+  margin-bottom: 8px;
 }
 
 .product__description {
@@ -66,6 +46,7 @@
   text-align: left;
   color: $grey-text;
   padding: 0;
+  width: 140px;
 }
 
 .product__description-cell:last-child {
@@ -75,16 +56,13 @@
 
 .product__item:last-child {
   text-align: center;
-  margin: 0;
-  padding-left: 19px;
-  padding-right: 19px;
   flex-direction: column;
 }
 
 .product__show-image {
   margin-top: 27px;
-  margin-bottom: 25px;
-  margin-left: 130px;
+  margin-bottom: 21px;
+  margin-left: 127px;
 }
 
 .product__show-text {
@@ -94,12 +72,40 @@
   line-height: 20px;
   color: $text-color;
   text-decoration: none;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .product__show-text-small {
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   font-weight: normal;
   font-style: normal;
   line-height: 16px;
   text-align: center;
+  margin-top: 9px;
+  margin-bottom: 18px;
+}
+
+@media (min-width: $tablet) {
+  .product {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .product__item {
+    width: 284px;
+  }
+
+  .product__item::after {
+    display: none;
+  }
+
+}
+
+@media (min-width: $desktop) {
+  .product__item {
+    width: 245px;
+  }
 }
