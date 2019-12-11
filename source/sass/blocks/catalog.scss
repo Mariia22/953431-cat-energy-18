@@ -10,5 +10,15 @@
     font-size: 60px;
     padding-left: 30px;
     border: 0;
+    margin-bottom: 75px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .catalog__title {
+    margin-top: 140px;
+    padding-right: 110px;
+    padding-left: 110px;
+    margin-bottom: 73px;
   }
 }

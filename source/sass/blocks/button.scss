@@ -62,14 +62,6 @@
   border: 0;
 }
 
-@media (min-width: $tablet) {
-  .order {
-    width: 249px;
-    padding-top: 13px;
-    padding-bottom: 12px;
-  }
-}
-
 .product__show-link {
   background-color: $grey-back;
   width: 280px;
@@ -104,4 +96,19 @@
   color: $white-back;
   text-transform: uppercase;
   border: 0;
+}
+
+@media (min-width: $desktop) {
+  .order {
+    width: 170px;
+    margin-left: 35px;
+    padding-top: 10px;
+  }
+
+  .product__show-link {
+    width: 170px;
+    margin-left: 35px;
+    padding-top: 10px;
+
+  }
 }
