@@ -16,9 +16,12 @@
 @media (min-width: $desktop) {
   .wrapper {
     position: relative;
-    min-height: 50px;
     padding-left: 110px;
     padding-right: 110px;
     width: 1220px;
+  }
+
+  .wrapper-noindex {
+    min-height: 50px;
   }
 }

@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper wrapper-noindex">
     <header class="page-header">
       <a href="index.html" class="page-header__logo">
         <picture>
@@ -29,7 +29,7 @@
         <div class="page-nav__wrapper">
           <ul class="page-nav__list site-menu">
             <li class="site-menu__item">
-              <a class="site-menu__link">Главная</a>
+              <a class="site-menu__link" href="index.html">Главная</a>
             </li>
             <li class="site-menu__item  site-menu__item--active">
               <a class="site-menu__link" href="catalog.html">Каталог продукции</a>
@@ -313,22 +313,24 @@
       </div>
     </section>
     <section class="contact">
-      <div class="wrapper">
+      <div class="contact__info wrapper">
         <h2 class="visually-hidden">Контакты</h2>
         <b class="contact__text">приглашаем к сотрудничеству дилеров!</b>
         <p class="contact__adress">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          ул. Большая Конюшенная, д. 19/8 <span class="contact__city">Санкт-Петербург</span>
         </p>
       </div>
-      <picture>
-        <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png">
-        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png">
-        <img class="contact__map-foto" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png" width="320"
-          height="400" alt="Компания находится по адресу ул. Большая Конюшенная, д. 19/8, Санкт-Петербург" />
-      </picture>
+      <div class="contact__map wrapper">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png" />
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png" />
+          <img class="contact__map-foto" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png" width="320"
+            height="400" alt="Компания находится по адресу ул. Большая Конюшенная, д. 19/8, Санкт-Петербург" />
+        </picture>
+      </div>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Rosja%2C%20191186!5e0!3m2!1spl!2spl!4v1573488557157!5m2!1spl!2spl"
-        width="280" height="400" allowfullscreen="">
+        allowfullscreen="">
       </iframe>
       <img class="contact__logo" src="img/map-pin.png" width="55" height="53" alt="Логотип на карте" />
     </section>

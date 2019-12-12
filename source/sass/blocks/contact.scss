@@ -1,12 +1,18 @@
 .contact {
   background-color: $white-back;
+}
+
+.contact__info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 26px;
   padding-top: 33px;
   padding-right: 25px;
-  padding-bottom: 28px;
   padding-left: 19px;
 }
 
 .contact__text {
+  width: 123px;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -18,4 +24,31 @@
 
 .contact__adress {
   line-height: 20px;
+  color: $grey-text;
+  width: 134px;
+  margin: 0;
+}
+
+@media(min-width:$tablet) {
+  .contact__info {
+    padding-top: 69px;
+    padding-right: 72px;
+    padding-bottom: 59px;
+    padding-left: 71px;
+  }
+
+  .contact__text {
+    width: 154px;
+  }
+
+  .contact__adress {
+    width: 153px;
+    text-align: right;
+    font-size: 16px;
+  }
+
+  .contact__city {
+    display: inline-block;
+    margin-top: 10px;
+  }
 }

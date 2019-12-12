@@ -167,19 +167,24 @@
 
 @media (min-width: $desktop) {
   .diet__options {
-    width: 1200px;
+    width: 1220px;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 29px;
+    margin-bottom: 74px;
     margin-top: 250px;
   }
 
   .diet__item {
     width: 495px;
+    padding-top: 73px;
     padding-left: 42px;
-    padding-bottom: 0;
     margin-bottom: 0;
+  }
+
+  .diet__item:last-child {
+    margin: 0;
+    padding-left: 54px;
   }
 
   .diet__item::before {
@@ -199,13 +204,13 @@
   .diet__head--pro {
     width: 134px;
     height: 55px;
-    top: 70px;
-    left: 39px;
+    top: 65px;
+    left: 31px;
   }
 
   .diet__head {
     margin-bottom: 72px;
-    padding-left: 170px;
+    padding-left: 163px;
   }
 
   .diet__description {
@@ -213,20 +218,13 @@
     margin-bottom: 2px;
   }
 
-  .diet__description--pro {
-    padding-left: 7px;
-  }
-
-  .diet__order {
-    padding-left: 8px;
+  .diet__title {
+    margin: 0;
+    padding: 0;
   }
 
   .diet__title::after {
     top: 6px;
-    left: 139px;
-  }
-
-  .diet__item:last-child {
-    margin-bottom: 105px;
+    left: 129px;
   }
 }
