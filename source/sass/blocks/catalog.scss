@@ -1,0 +1,24 @@
+.catalog__title {
+  margin-bottom: 28px;
+  padding-left: 20px;
+  border-top: 1px solid #e6e6e6;
+}
+
+@media (min-width: $tablet) {
+  .catalog__title {
+    line-height: 60px;
+    font-size: 60px;
+    padding-left: 30px;
+    border: 0;
+    margin-bottom: 75px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .catalog__title {
+    margin-top: 140px;
+    padding-right: 110px;
+    padding-left: 110px;
+    margin-bottom: 73px;
+  }
+}

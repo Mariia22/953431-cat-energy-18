@@ -1,21 +1,26 @@
 .program {
-  width: 320px;
-  margin: 0 auto;
   position: relative;
-  margin-bottom: 22px;
+  padding-top: 39px;
+  display: flex;
+  flex-direction: column;
 }
 
-.program::before {
-  content: " ";
+.program__back {
   position: absolute;
+  content: " ";
+  background-image: url(#{$img-path}/index-background-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
   z-index: -1;
-  top: 0;
-  left: 0;
-  background: url(#{$img-path}/gift-photo-mobile@1x.jpg) no-repeat;
-  background-size: contain;
-  background-color: $green-back;
-  width: 100%;
   height: 305px;
+  width: 320px;
+  top: 12px;
+  left: 50%;
+  margin-left: -160px;
+}
+
+.program__wrapper {
+  position: relative;
 }
 
 .program__title {
@@ -24,11 +29,8 @@
   font-weight: normal;
   text-align: center;
   color: $white-back;
-  margin: 29px 38px 19px 37px;
-  margin-top: 29px;
-  margin-right: 38px;
-  margin-bottom: 19px;
-  margin-left: 37px;
+  margin-bottom: 25px;
+  margin-top: 0;
 }
 
 .program__slogan {
@@ -38,15 +40,21 @@
   text-align: center;
   color: $white-back;
   text-transform: uppercase;
+  padding-left: 38px;
+}
+
+.program__picture {
+  position: absolute;
+  content: "";
+  top: 140px;
+  left: 20px;
+  z-index: -1;
+  height: 270px;
+  width: 280px;
 }
 
 @media (min-width: $tablet) {
-  .program {
-    padding-left: 120px;
-    width: 768px;
-  }
-
-  .program::before {
+  .program__back {
     display: none;
   }
 
@@ -55,19 +63,70 @@
     line-height: 60px;
     text-align: left;
     color: $text-color;
-    margin-bottom: 33px;
+    margin-top: 7px;
+    margin-left: 87px;
+    margin-bottom: 42px;
+    width: 420px;
   }
 
   .program__slogan {
     font-size: 20px;
     line-height: 20px;
     color: $text-color;
-    margin-bottom: 48px;
+    margin-left: 50px;
+    width: 420px;
+  }
+
+  .program__picture {
+    position: absolute;
+    content: "";
+    top: 210px;
+    left: 30px;
+    z-index: -1;
+    height: 609px;
+    width: 709px;
   }
 }
 
 @media (min-width: $desktop) {
-  .program {
-    width: 1300px;
+  .program__back {
+    display: block;
+    position: absolute;
+    content: " ";
+    background-image: url(#{$img-path}/index-background-desktop@1x.jpg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 100% 697px;
+    z-index: -1;
+    height: 697px;
+    width: 50%;
+    top: 0;
+    right: 0;
+    left: auto;
+    margin: 0;
+  }
+
+  .program__picture {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top: 102px;
+    left: 550px;
+    height: 499px;
+    width: 552px;
+  }
+
+  .program__title {
+    margin-top: 183px;
+    margin-left: 76px;
+  }
+
+  .program__slogan {
+    margin-left: 39px;
+  }
+
+  .program__order {
+    margin-top: 50px;
+    margin-left: 75px;
   }
 }

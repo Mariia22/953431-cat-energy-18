@@ -1,3 +1,17 @@
 .contact__map {
-  min-width: 320px;
+  position: relative;
+  width: 100%;
+}
+
+.contact__map-foto {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  border: none;
+}
+
+.contact__map iframe {
+  position: relative;
+  border: none;
 }

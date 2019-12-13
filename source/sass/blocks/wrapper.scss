@@ -1,8 +1,7 @@
 .wrapper {
+  margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
   width: 280px;
 }
 
@@ -16,8 +15,13 @@
 
 @media (min-width: $desktop) {
   .wrapper {
+    position: relative;
     padding-left: 110px;
     padding-right: 110px;
-    width: 1200px;
+    width: 1220px;
+  }
+
+  .wrapper-noindex {
+    min-height: 50px;
   }
 }

@@ -1,3 +1,12 @@
 .logo {
   text-align: center;
+  padding-top: 39px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid $grey-form;
+}
+
+@media (min-width: $tablet) {
+  .logo {
+    border-bottom: 0;
+  }
 }

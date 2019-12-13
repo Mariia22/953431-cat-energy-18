@@ -1,6 +1,48 @@
 .copyright {
-  padding-top: 31px;
+  padding-top: 23px;
   padding-bottom: 31px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+
+.copyright__link {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 16px;
+  color: $grey-text;
+  padding-top: 8px;
+}
+
+.copyright__link-foto {
+  position: absolute;
+  fill: $grey-logo;
+  right: -7px;
+  top: 13px;
+}
+
+@media (min-width: $tablet) {
+  .copyright {
+    padding-top: 39px;
+    padding-bottom: 31px;
+  }
+
+  .copyright__link {
+    padding-top: 1px;
+    margin-right: 51px;
+  }
+
+  .copyright__link-foto {
+    right: -4px;
+    top: 22px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .copyright__link-foto {
+    right: -9px;
+    top: 24px;
+  }
 }
