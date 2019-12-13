@@ -52,3 +52,18 @@
     margin-top: 10px;
   }
 }
+
+@media (min-width: $desktop) {
+  .contact__info {
+    position: absolute;
+    top: 30px;
+    left: 130px;
+    width: 400px;
+    z-index: 2;
+    padding-top: 69px;
+    padding-right: 72px;
+    padding-bottom: 59px;
+    padding-left: 71px;
+    background-color: $white-back;
+  }
+}
