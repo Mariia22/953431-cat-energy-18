@@ -29,7 +29,7 @@
         <div class="page-nav__wrapper">
           <ul class="page-nav__list site-menu">
             <li class="site-menu__item site-menu__item--active">
-              <a class="site-menu__link site-menu__link--index">Главная</a>
+              <span class="site-menu__link site-menu__link--index">Главная</span>
             </li>
             <li class="site-menu__item">
               <a class="site-menu__link site-menu__link--index" href="catalog.html">Каталог продукции</a>
@@ -199,7 +199,13 @@
       <picture>
         <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png" />
         <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png" />
-        <img class="example__photo" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png" width="311"
+        <img class="example__photo-before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png" width="311"
+          height="232" alt="До использования питания для котов 'Cat Energy' " />
+      </picture>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png" />
+        <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png" />
+        <img class="example__photo-after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png" width="311"
           height="232" alt="Результат использования питания для котов 'Cat Energy' " />
       </picture>
       <button class="example__btn" aria-label="Было">Было</button>
@@ -207,14 +213,16 @@
       <button class="example__btn" aria-label="Стало">Стало</button>
     </section>
     <section class="contact">
-      <div class="contact__info wrapper">
-        <h2 class="visually-hidden">Контакты</h2>
-        <b class="contact__text">приглашаем к сотрудничеству дилеров!</b>
-        <p class="contact__adress">
-          ул. Большая Конюшенная, д. 19/8 <span class="contact__city">Санкт-Петербург</span>
-        </p>
+      <div class="wrapper">
+        <div class="contact__info">
+          <h2 class="visually-hidden">Контакты</h2>
+          <b class="contact__text">приглашаем к сотрудничеству дилеров!</b>
+          <p class="contact__adress">
+            ул. Большая Конюшенная, д. 19/8 <span class="contact__city">Санкт-Петербург</span>
+          </p>
+        </div>
       </div>
-      <div class="contact__map wrapper">
+      <div class="contact__map" id="map">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png" />
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png" />
@@ -222,11 +230,6 @@
             height="400" alt="Компания находится по адресу ул. Большая Конюшенная, д. 19/8, Санкт-Петербург" />
         </picture>
       </div>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Rosja%2C%20191186!5e0!3m2!1spl!2spl!4v1573488557157!5m2!1spl!2spl"
-        allowfullscreen="">
-      </iframe>
-      <img class="contact__logo" src="img/map-pin.png" width="55" height="53" alt="Логотип на карте" />
     </section>
   </main>
   <footer class="page-footer">
@@ -304,8 +307,8 @@
     var navMain = document.querySelector(".page-nav");
     var navToggle = document.querySelector(".page-nav__toggle");
 
-    navMain.classList.remove("page-nav--nojs");
 
+    navMain.classList.remove("page-nav--nojs");
     navToggle.addEventListener("click", function () {
       if (navMain.classList.contains("page-nav--closed")) {
         navMain.classList.remove("page-nav--closed");
@@ -315,8 +318,30 @@
         navMain.classList.remove("page-nav--opened");
       }
     });
+    var map;
+
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {
+          lat: 59.938754,
+          lng: 30.320047
+        },
+        zoom: 15
+      });
+      var marker = new google.maps.Marker({
+        position: {
+          lat: 59.938888,
+          lng: 30.323015
+        },
+        map: map,
+        title: 'Магазин Cat Energy',
+        icon: 'img/map-pin.png'
+      });
+    }
 
   </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtonysjhXM6Gz7CnEVS2WlSqiotH64P6I&callback=initMap"></script>
 </body>
 
 </html>
