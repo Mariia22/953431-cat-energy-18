@@ -5,11 +5,13 @@ var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
 var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
+var csso = require("gulp-csso");
+var rename = require("gulp-rename");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var del = require("del");
 
-gulp.task("css", function() {
+gulp.task("css", function () {
   return gulp
     .src("source/sass/style.scss")
     .pipe(plumber())
@@ -19,10 +21,11 @@ gulp.task("css", function() {
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"));
+    .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
 });
 
-gulp.task("server", function() {
+gulp.task("server", function () {
   server.init({
     server: "source/",
     notify: false,
@@ -35,10 +38,10 @@ gulp.task("server", function() {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("del", function() {
+gulp.task("del", function () {
   return del("build");
 });
-gulp.task("copy", function() {
+gulp.task("copy", function () {
   return gulp
     .src(["source/fonts/**/*.{woff,woff2}", "source/img/**", "source/js/**"], {
       base: "source"
