@@ -13,8 +13,10 @@ var del = require("del");
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
+var imagemin = require("gulp-imagemin");
+var webp = require("gulp-webp");
 
-gulp.task("css", function () {
+gulp.task("css", function() {
   return gulp
     .src("source/sass/style.scss")
     .pipe(plumber())
@@ -28,7 +30,7 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
-gulp.task("server", function () {
+gulp.task("server", function() {
   server.init({
     server: "build/",
     notify: false,
@@ -41,15 +43,15 @@ gulp.task("server", function () {
   gulp.watch("source/img/icon-*.svg"), gulp.series("sprite", "html", "refresh");
   gulp.watch("source/*.html"), gulp.series("html", "refresh");
 });
-gulp.task("refresh", function (done) {
+gulp.task("refresh", function(done) {
   server.reload();
   done();
-})
-gulp.task("del", function () {
+});
+gulp.task("del", function() {
   return del("build");
 });
 
-gulp.task("copy", function () {
+gulp.task("copy", function() {
   return gulp
     .src(["source/fonts/**/*.{woff,woff2}", "source/img/**", "source/js/**"], {
       base: "source"
@@ -57,9 +59,9 @@ gulp.task("copy", function () {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("img", function () {
+gulp.task("img", function() {
   return gulp
-    .src("source/img/**/*.{png,jpg,svg}")
+    .src("build/img/**/*.{png,jpg,svg}")
     .pipe(
       imagemin([
         imagemin.optipng({
@@ -74,31 +76,38 @@ gulp.task("img", function () {
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("webp", function () {
+gulp.task("webp", function() {
   return gulp
-    .src("sorce/img/**/*.{png,jpg}")
-    .pipe(webp({
-      quality: 90
-    }))
+    .src("build/img/**/*.{png,jpg}")
+    .pipe(
+      webp({
+        quality: 90
+      })
+    )
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("sprite", function () {
+gulp.task("sprite", function() {
   return gulp
     .src("source/img/icon-*.svg")
-    .pipe(svgstore({
-      inLineSvg: true
-    }))
+    .pipe(
+      svgstore({
+        inLineSvg: true
+      })
+    )
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("html", function () {
+gulp.task("html", function() {
   return gulp
     .src("source/*.html")
     .pipe(posthtml([include()]))
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("build", gulp.series("del", "copy", "css", "sprite", "html"));
+gulp.task(
+  "build",
+  gulp.series("del", "copy", "css", "sprite", "html", "img", "webp")
+);
 gulp.task("start", gulp.series("build", "server"));
