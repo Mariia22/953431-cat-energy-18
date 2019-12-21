@@ -1,25 +1,67 @@
 .example {
   background-color: $grey-back;
-  padding-top: 33px;
   padding-bottom: 39px;
 }
 
+.example__title {
+  padding-top: 33px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.example__result {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__item {
+  position: relative;
+  width: 124px;
+  border: 1px solid $grey-form;
+  border-radius: 5px;
+  padding-top: 13px;
+  padding-bottom: 18px;
+  text-align: center;
+}
+
 .example__level {
+  display: inline-block;
   font-size: 24px;
   font-weight: normal;
   font-style: normal;
   line-height: 24px;
   color: $text-color;
   text-align: center;
+  text-transform: uppercase;
 }
 
-.example__text {
+.example__link {
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 15px;
+  width: 78px;
+  background-color: $grey-back;
+  margin: 0 auto;
+  padding-left: 9px;
+  padding-right: 9px;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   font-weight: normal;
   font-style: normal;
   line-height: 12px;
   text-align: center;
+  color: $grey-text;
+}
+
+.example__text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 18px;
+  text-align: left;
+  color: $grey-text;
 }
 
 .example__total {
@@ -27,4 +69,77 @@
   text-align: center;
   text-transform: uppercase;
   color: $text-color;
+  padding-top: 25px;
 }
+
+.example__slider {
+  padding-top: 35px;
+  display: flex;
+  align-items: baseline;
+  width: 193px;
+  margin: 0 auto;
+}
+
+.example__photo-closed {
+  display: none;
+}
+
+.example__photo-opened {
+  display: block;
+  width: 311px;
+  height: 232px;
+}
+
+.example__button-before,
+.example__button-after {
+  width: 40px;
+  height: 15px;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: right;
+  text-transform: uppercase;
+  background-color: $grey-back;
+  border: none;
+  outline: none;
+}
+
+.example__bar {
+  width: 82px;
+  height: 12px;
+  border: 1px solid $grey-form;
+  background-color: $white-back;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 17px;
+  position: relative;
+}
+
+.example__scale {
+  width: 35px;
+  height: 6px;
+  background-color: $green-back;
+  border-radius: 3px;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+}
+
+.example__scale-after {
+  left: 35px;
+}
+
+.example__range {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .example {
+    background-color: $white-back;
+  }
+}
+
+@media (min-width: $tablet) {}
