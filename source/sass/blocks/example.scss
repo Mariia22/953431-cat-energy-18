@@ -163,16 +163,19 @@
 .example__scale-after {
   left: 35px;
 }
-
-.example__range {
+.example__progress-range {
+  display: none;
+}
+.example__progress-toggle {
   display: none;
 }
 
 @media (min-width: $tablet) {
   .example {
     background-color: $white-back;
+    position: relative;
+    padding-bottom: 75px;
   }
-
   .example__title {
     font-size: 60px;
     line-height: 60px;
@@ -228,33 +231,23 @@
   .example__button-before,
   .example__button-after {
     position: relative;
-  }
-
-  .example__button-before::after,
-  .example__button-after::after {
-    position: absolute;
-    top: 30px;
-    left: 3px;
-    width: 49px;
-    height: 1px;
-    color: $grey-form;
+    z-index: 2;
+    width: 46px;
+    background: none;
+    font-size: 20px;
+    line-height: 20px;
+    border-bottom: 1px dotted $grey-form;
+    padding-bottom: 27px;
+    padding-left: 0;
   }
 
   .example__slider {
-    width: 610px;
+    width: 570px;
+    padding-bottom: 13px;
   }
 
   .example__bar {
     display: none;
-  }
-
-  .example__range {
-    display: block;
-    width: 100%;
-    height: 6px;
-    background-color: $grey-form;
-    outline: 0;
-    cursor: pointer;
   }
 
   .example__progress {
@@ -282,7 +275,6 @@
     height: 100%;
     background-image: url(../img/before-tablet@1x.png);
     background-position-x: -25px;
-    background-position-y: 4px;
     z-index: 2;
   }
 
@@ -297,8 +289,8 @@
     height: 100%;
     background-image: url(../img/after-tablet@1x.png);
     left: 50%;
-    background-position-x: -11px;
-    transform: scaleX(-1);
+    z-index: 2;
+    background-position-x: -305px;
   }
 
   @media (min-resolution: 1.5dppx) {
@@ -306,7 +298,117 @@
       background-image: url(../img/after-tablet@2x.png);
     }
   }
-
+  .example__background {
+    position: absolute;
+    height: 462px;
+    width: 100%;
+    background-image: linear-gradient(
+      to right,
+      $grey-back 0,
+      $grey-back 50%,
+      $grey-background 50%,
+      $grey-background 100%
+    );
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+  }
+  .example__progress-range {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    height: 6px;
+    background-color: $grey-form;
+    outline: 0;
+    margin-left: 21px;
+    margin-right: 21px;
+    margin-top: 0;
+    cursor: pointer;
+  }
+  .example__progress-toggle {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    left: 48%;
+    top: 91%;
+    margin-top: -17px;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #cecece;
+    border-radius: 50%;
+    box-shadow: 0 2px 2px 0 #d6d6d6;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .example__progress-toggle::after {
+    content: "";
+    position: absolute;
+    z-index: 4;
+    display: block;
+    top: 13px;
+    left: 13px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $green-back;
+  }
 }
 
-@media (min-width: $desktop) {}
+@media (min-width: $desktop) {
+  .example__container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 600px;
+  }
+  .example__text {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 76px;
+  }
+  .example__sum {
+    width: 520px;
+    flex-direction: column;
+  }
+  .example__result {
+    margin-bottom: 60px;
+  }
+  .example__total {
+    text-align: left;
+  }
+  .example__text {
+    width: 435px;
+  }
+  .example__link {
+    width: 142px;
+    background-color: $grey-back;
+    top: 60px;
+    left: 15px;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .example__picture {
+    width: 590px;
+    margin-left: auto;
+    margin-top: 0;
+  }
+  .example__background {
+    height: 463px;
+    background-image: linear-gradient(
+      to right,
+      $grey-back 0,
+      $grey-back calc(90% - 325px),
+      $grey-background calc(90% - 325px),
+      $grey-background 100%
+    );
+  }
+  .example__progress-toggle {
+    left: 69%;
+    top: 99%;
+  }
+}
