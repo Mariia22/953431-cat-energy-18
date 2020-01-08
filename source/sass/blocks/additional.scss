@@ -1,9 +1,10 @@
 .additional__title {
   line-height: 24px;
+  font-size: 24px;
   padding-top: 31px;
-  padding-right: 77px;
   padding-bottom: 30px;
-  padding-left: 19px;
+  border-top: 1px solid $grey-line;
+  border-bottom: 1px solid $grey-line;
 }
 
 .goods__description-cell {
