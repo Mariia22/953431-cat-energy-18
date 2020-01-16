@@ -49,6 +49,7 @@
 .product__item:last-child {
   text-align: center;
   flex-direction: column;
+  border-bottom: 1px solid $grey-line;
 }
 
 .product__show-image {
@@ -141,7 +142,6 @@
   }
 
   .product__description-row {
-
     border-bottom: 1px solid $grey-form;
   }
 

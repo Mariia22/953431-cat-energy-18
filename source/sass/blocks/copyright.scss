@@ -18,9 +18,12 @@
 
 .copyright__link-foto {
   position: absolute;
-  fill: $grey-logo;
   right: -7px;
   top: 13px;
+}
+
+.copyright__link-foto svg path {
+  fill: $grey-logo;
 }
 
 @media (min-width: $tablet) {
