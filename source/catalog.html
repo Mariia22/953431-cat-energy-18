@@ -326,61 +326,65 @@
     </section>
     <section class="additional wrapper">
       <h3 class="additional__title">Дополнительные товары</h3>
+      <div class="additional__container">
       <ul class="additional__list goods">
         <li class="goods__item">
           <h4 class="goods__title">Сахарозаменитель</h4>
           <table class="goods__info">
             <tr class="goods__description-row">
               <td class="goods__description-cell">1 упаковка (100 г)</td>
-              <td class="goods__description-cell">200 р</td>
+              <td class="goods__description-cell">200 P.</td>
             </tr>
           </table>
 
-          <a class="order" href="#">Заказать</a>
+          <a class="order additional__order" href="#">Заказать</a>
         </li>
         <li class="goods__item">
           <h4 class="goods__title">Питьевая вода</h4>
           <table class="goods__info">
             <tr class="goods__description-row">
               <td class="goods__description-cell">5 литров</td>
-              <td class="goods__description-cell">50 р</td>
+              <td class="goods__description-cell">50 Р.</td>
             </tr>
           </table>
 
-          <a class="order" href="#">Заказать</a>
+          <a class="order additional__order" href="#">Заказать</a>
         </li>
         <li class="goods__item">
           <h4 class="goods__title">Молоко</h4>
           <table class="goods__info">
             <tr class="goods__description-row">
               <td class="goods__description-cell">1 литр</td>
-              <td class="goods__description-cell">100 р</td>
+              <td class="goods__description-cell">100 Р.</td>
             </tr>
           </table>
 
-          <a class="order" href="#">Заказать</a>
+          <a class="order additional__order" href="#">Заказать</a>
         </li>
         <li class="goods__item">
           <h4 class="goods__title">Витамины</h4>
           <table class="goods__info">
             <tr class="goods__description-row">
               <td class="goods__description-cell">1 упаковка (30 г)</td>
-              <td class="goods__description-cell">300 р</td>
+              <td class="goods__description-cell">300 Р.</td>
             </tr>
           </table>
 
-          <a class="order" href="#">Заказать</a>
+          <a class="order additional__order" href="#">Заказать</a>
         </li>
       </ul>
-    </section>
-    <section class="present wrapper">
+    <div class="additional_present present">
       <h2 class="visually-hidden">Подарок за покупку</h2>
-      <div class="present__wrapper">
-        <img class="present__picture" src=img/icon-gift.svg alt="Подарок" width="56px" height="65px">
-        <b class="present__text">Закажите все и получите чехол для кота в подарок!</b>
+      <div class="present__info">
+        <svg class="present__picture" width="56" height="56">
+          <use xlink:href="#icon-gift"></use>
+        </svg>
+        <p class="present__text">Закажите все и получите чехол для кота в подарок!</p>
       </div>
-    </section>
-    <section class="contact">
+    </div>
+  </div>
+  </section>
+    <section class="contact grey__catalog">
       <div class="wrapper">
         <div class="contact__info">
           <h2 class="visually-hidden">Контакты</h2>
@@ -393,25 +397,48 @@
       </div>
       <div class="contact__map" id="map">
         <picture>
-          <source type="image/webp" media="(min-width: 1440px)" srcset="
-                img/bg-map-desktop@1x.webp 1x,
-                img/bg-map-desktop@2x.webp 2x
-              " />
-          <source type="image/webp" media="(min-width: 768px)" srcset="
-                img/bg-map-tablet@1x.webp 1x,
-                img/bg-map-tablet@2x.webp 2x
-              " />
-          <source type="image/webp" srcset="
-                img/bg-map-mobile@1x.webp 1x,
-                img/bg-map-mobile@2x.webp 2x
-              " />
-          <source media="(min-width: 1440px)" srcset="
-                img/bg-map-desktop@1x.png 1x,
-                img/bg-map-desktop@2x.png 2x
-              " />
-          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x" />
-          <img class="contact__map-foto" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320"
-            height="400" alt="Компания находится по адресу ул. Большая Конюшенная, д. 19/8, Санкт-Петербург" />
+          <source
+            type="image/webp"
+            media="(min-width: 1440px)"
+            srcset="
+              img/bg-map-desktop@1x.webp 1x,
+              img/bg-map-desktop@2x.webp 2x
+            "
+          />
+          <source
+            type="image/webp"
+            media="(min-width: 768px)"
+            srcset="
+              img/bg-map-tablet@1x.webp 1x,
+              img/bg-map-tablet@2x.webp 2x
+            "
+          />
+          <source
+            type="image/webp"
+            srcset="
+              img/bg-map-mobile@1x.webp 1x,
+              img/bg-map-mobile@2x.webp 2x
+            "
+          />
+          <source
+            media="(min-width: 1440px)"
+            srcset="
+              img/bg-map-desktop@1x.png 1x,
+              img/bg-map-desktop@2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x"
+          />
+          <img
+            class="contact__map-foto"
+            src="img/bg-map-mobile@1x.png"
+            srcset="img/bg-map-mobile@2x.png 2x"
+            width="320"
+            height="400"
+            alt="Компания находится по адресу ул. Большая Конюшенная, д. 19/8, Санкт-Петербург"
+          />
         </picture>
       </div>
     </section>
@@ -465,12 +492,12 @@
       </div>
     </div>
   </footer>
-  <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtonysjhXM6Gz7CnEVS2WlSqiotH64P6I&callback=initMap"></script>
-  <script>
-    src = "js/script.js"
-
-  </script>
+  <script
+  async
+  defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtonysjhXM6Gz7CnEVS2WlSqiotH64P6I&callback=initMap"
+></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>
