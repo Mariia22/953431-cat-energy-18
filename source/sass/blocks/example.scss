@@ -178,6 +178,7 @@
     position: relative;
     padding-bottom: 75px;
   }
+
   .example__title {
     font-size: 60px;
     line-height: 60px;
@@ -343,7 +344,7 @@
     border: 1px solid #cecece;
     border-radius: 50%;
     box-shadow: 0 2px 2px 0 #d6d6d6;
-    background-color: #fff;
+    background-color: $white-back;
     cursor: pointer;
   }
 
