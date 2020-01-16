@@ -1,6 +1,7 @@
 .additional {
   position: relative;
 }
+
 .additional::before {
   content: "";
   width: 53px;
@@ -11,34 +12,42 @@
   z-index: -1;
   background-color: $green-back;
 }
+
 .additional__title {
   line-height: 24px;
   font-size: 24px;
   padding-top: 31px;
   padding-bottom: 30px;
 }
+
 .goods__info {
   margin-bottom: 14px;
   width: 280px;
 }
+
 .goods__description-cell {
   line-height: 14px;
 }
+
 .goods__description-cell:last-child {
   text-align: right;
   width: 70px;
   margin: 0;
 }
+
 .goods__item {
   border-top: 1px solid $grey-line;
 }
+
 .goods__item:last-child {
   border-bottom: 1px solid $grey-line;
 }
+
 @media (min-width: $tablet) {
   .additional {
     margin-bottom: 69px;
   }
+
   .additional__title {
     line-height: 36px;
     font-size: 36px;
@@ -46,11 +55,13 @@
     padding-left: 36px;
     padding-right: 36px;
   }
+
   .additional::before {
     width: 7%;
     top: 20px;
     left: 0;
   }
+
   .additional::after {
     content: "";
     position: absolute;
@@ -60,6 +71,7 @@
     right: -30px;
     background-color: $green-back;
   }
+
   .goods__item {
     display: flex;
     justify-content: space-between;
@@ -69,16 +81,19 @@
     border-left: 1px solid $grey-line;
     border-right: 1px solid $grey-line;
   }
+
   .goods__title {
     font-size: 20px;
     line-height: 20px;
     width: 30%;
     margin-bottom: 25px;
   }
+
   .goods__info {
     margin-top: 33px;
     width: 70%;
   }
+
   .goods__description-cell {
     font-family: "Arial", sans-serif;
     font-size: 16px;
@@ -86,19 +101,23 @@
     text-align: right;
   }
 }
+
 @media (min-width: $desktop) {
   .additional__container {
     display: flex;
   }
+
   .additional__order {
     margin-top: 15px;
     margin-bottom: 15px;
     width: 245px;
   }
+
   .goods {
     width: 62%;
     margin-right: 80px;
   }
+
   .goods__item {
     padding-left: 0;
     padding-right: 0;
@@ -106,14 +125,17 @@
     border-left: none;
     border-right: none;
   }
+
   .goods__item:last-child {
     border-bottom: 1px solid $grey-line;
     margin-bottom: 86px;
   }
+
   .goods__info {
     margin-top: 33px;
     width: 35%;
   }
+
   .goods__title {
     width: 20%;
   }

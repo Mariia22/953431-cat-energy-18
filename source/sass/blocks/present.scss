@@ -2,6 +2,7 @@
   padding-top: 35px;
   padding-bottom: 35px;
 }
+
 .present__info {
   width: 280px;
   height: 289px;
@@ -14,23 +15,27 @@
   align-items: center;
   justify-content: center;
 }
+
 @media (min-resolution: 1.5dppx) {
   .present__info {
     background-image: url(#{$img-path}/gift-photo-mobile@2x.jpg);
   }
 }
+
 .present__picture {
-  fill: #fff;
+  fill: $white-back;
 }
+
 .present__text {
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  color: #fff;
+  color: $white-back;
   width: 160px;
   margin: 60px auto 0;
   text-align: center;
 }
+
 @media (min-width: $tablet) {
   .present__info {
     height: 200px;
@@ -42,21 +47,25 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
   @media (min-resolution: 1.5dppx) {
     .present__info {
       background-image: url(#{$img-path}/gift-photo-tablet@2x.jpg);
     }
   }
+
   .present__text {
     margin: 0;
     text-align: left;
   }
 }
+
 @media (min-width: $desktop) {
   .present {
     padding-top: 0;
     padding-bottom: 0;
   }
+
   .present__info {
     background-image: url(#{$img-path}/gift-photo-desktop@1x.jpg);
     width: 245px;
@@ -67,9 +76,11 @@
     padding-top: 65px;
     padding-bottom: 43px;
   }
+
   .present__text {
     text-align: center;
   }
+
   @media (min-resolution: 1.5dppx) {
     .present__info {
       background-image: url(#{$img-path}/gift-photo-desktop@2x.jpg);
