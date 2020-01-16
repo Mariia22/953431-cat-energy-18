@@ -1,10 +1,53 @@
-.form__label,
-.form__radio {
+.form__list{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.data__item {
+display: flex;
+width: 100%;
+align-items: center;
+margin-bottom: 14px;
+}
+
+.form__label {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
+  color: $black-two;
+}
+.form__radio {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  color: $black-two;
+  padding-left: 46px;
+}
+.form__radio::before {
+  border-radius: 50%;
+  top: -6px;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid #cdcdcd;
 }
 
+.form__input-radio:checked+label::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 9px;
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  background-color: #68b738;
+  border-radius: 50%;
+}
 .form__contacts-title {
   line-height: 24px;
   margin: 30px 20px;
@@ -17,11 +60,12 @@
   text-transform: uppercase;
   font-weight: normal;
   font-style: normal;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 16px;
   border: 1px solid $grey-form;
-  margin-bottom: 14px;
+  margin-left: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  flex-grow: 1;
 }
 
 .form__check {
@@ -39,4 +83,42 @@
   font-weight: normal;
   font-style: normal;
   text-align: center;
+}
+.form__program{
+  margin-top: 21px;
+  display: flex;
+  flex-direction: column;
+}
+.form__aim{
+  margin-bottom: 13px;
+}
+.form__wrapper{
+  border-top: 1px solid $grey-line;
+  border-bottom: 1px solid $grey-line;
+  padding-top: 21px;
+}
+
+.form__title {
+  padding-left: 20px;
+  width: 181px;
+}
+.form__contacts{
+  position: relative;
+}
+.form__contacts::after {
+  content: "";
+  position: absolute;
+  width: 45%;
+  top: 14px;
+  right: 0;
+  height: 3px;
+  background-color: $green-back;
+}
+.info__label{
+  position:relative;
+}
+.info__logo{
+  position: absolute;
+  top: 0;
+  right: 16px;
 }

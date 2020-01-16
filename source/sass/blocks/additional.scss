@@ -4,11 +4,11 @@
 
 .additional::before {
   content: "";
-  width: 53px;
+  width: 300%;
   height: 3px;
   position: absolute;
   top: 44px;
-  right: 2px;
+  left: 260px;
   z-index: -1;
   background-color: $green-back;
 }
@@ -34,14 +34,38 @@
   width: 70px;
   margin: 0;
 }
-
 .goods__item {
-  border-top: 1px solid $grey-line;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.goods__item:last-child {
-  border-bottom: 1px solid $grey-line;
+.goods__item::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -170px;
+  height: 1px;
+  width: 300%;
+  background-color: $grey-line;
+  overflow: hidden;
 }
+
+.present{
+  position: relative;
+}
+
+.present::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -170px;
+  height: 1px;
+  width: 300%;
+  background-color: $grey-line;
+  overflow: hidden;
+}
+
 
 @media (min-width: $tablet) {
   .additional {

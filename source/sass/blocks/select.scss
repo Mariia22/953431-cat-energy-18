@@ -1,0 +1,16 @@
+.select{
+  display: flex;
+  flex-direction: column;
+}
+.select__title {
+  margin-bottom: 35px;
+  padding-left: 20px;
+}
+.select__text {
+  color: $text-color;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 39px;
+  padding-left: 20px;
+}
+

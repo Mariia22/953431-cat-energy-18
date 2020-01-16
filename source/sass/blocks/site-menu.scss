@@ -1,23 +1,22 @@
 .site-menu {
   width: 280px;
 }
-
 .site-menu__item {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px solid $grey-form;
+  margin-left: -320px;
+  margin-right: -320px;
+  border-bottom: 1px solid $grey-line;
   text-align: center;
 }
 
 .site-menu__item:first-child {
-  border-top: 1px solid $grey-form;
+  border-top: 1px solid $grey-line;
 }
-
 .site-menu__item:last-child {
-  border-bottom: 0;
+  border-bottom: none;
 }
-
 .site-menu__link {
   font-size: 20px;
   line-height: 20px;
@@ -52,6 +51,8 @@
   }
 
   .site-menu__item {
+    margin-left: 0;
+    margin-right: 0;
     padding-top: 18px;
     padding-bottom: 24px;
     border: 0;
@@ -76,12 +77,15 @@
     line-height: 25px;
     font-weight: normal;
   }
+  .site-menu__border {
+    border-bottom: none;
+  }
 }
 
 @media (min-width: $desktop) {
   .site-menu {
     width: 480px;
-    padding-left: 530px;
+    padding-left: 53px;
   }
 
   .site-menu__link {

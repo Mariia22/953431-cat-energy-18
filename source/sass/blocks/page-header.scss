@@ -1,3 +1,6 @@
+.header__border{
+  border-bottom: 1px solid $grey-line;
+}
 .page-header {
   padding-top: 12px;
   position: relative;
@@ -8,6 +11,9 @@
 }
 
 @media (min-width: $tablet) {
+  .header__border{
+    border-bottom: none;
+  }
   .page-header {
     display: flex;
     flex-direction: row;
@@ -24,7 +30,10 @@
 }
 
 @media (min-width: $desktop) {
-  .page-header {
+  .header__border{
+    border-bottom: none;
+  }
+  .header {
     position: absolute;
     top: 30px;
     left: 105px;
