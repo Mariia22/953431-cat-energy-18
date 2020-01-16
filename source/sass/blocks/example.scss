@@ -306,13 +306,7 @@
     position: absolute;
     height: 462px;
     width: 100%;
-    background-image: linear-gradient(
-      to right,
-      $grey-back 0,
-      $grey-back 50%,
-      $grey-background 50%,
-      $grey-background 100%
-    );
+    background-image: linear-gradient(to right, $grey-back 0, $grey-back 50%, $grey-background 50%, $grey-background 100%);
     z-index: 1;
     left: 0;
     bottom: 0;
@@ -411,13 +405,7 @@
 
   .example__background {
     height: 463px;
-    background-image: linear-gradient(
-      to right,
-      $grey-back 0,
-      $grey-back calc(90% - 325px),
-      $grey-background calc(90% - 325px),
-      $grey-background 100%
-    );
+    background-image: linear-gradient(to right, $grey-back 0, $grey-back calc(90% - 325px), $grey-background calc(90% - 325px), $grey-background 100%);
   }
 
   .example__progress-toggle {
