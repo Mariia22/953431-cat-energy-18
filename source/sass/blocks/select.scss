@@ -4,13 +4,38 @@
 }
 .select__title {
   margin-bottom: 35px;
-  padding-left: 20px;
 }
 .select__text {
   color: $text-color;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 39px;
-  padding-left: 20px;
 }
 
+@media(min-width: $tablet){
+
+  .select__title{
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 55px;
+  }
+
+  .select__text {
+    width: 350px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 65px;
+    margin-left: 40px;
+  }
+}
+@media(min-width: $desktop){
+
+  .select__title {
+    margin-top: 201px;
+    margin-left: 113px;
+  }
+
+  .select__text{
+    margin-left: 113px;
+  }
+}

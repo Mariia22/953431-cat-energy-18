@@ -46,14 +46,9 @@
   background-color: $green-back;
   width: 280px;
   height: 40px;
-  margin-top: 34px;
   margin-right: 20px;
   margin-bottom: 23px;
   margin-left: 20px;
-  padding-top: 13px;
-  padding-right: 50px;
-  padding-bottom: 12px;
-  padding-left: 57px;
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
@@ -104,6 +99,15 @@
 
   .additional__order {
     width: 633px;
+  }
+
+  .form__order {
+    width: 285px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 5px;
+    padding-top: 17px;
+    padding-bottom: 35px;
   }
 }
 
