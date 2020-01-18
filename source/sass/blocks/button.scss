@@ -1,3 +1,10 @@
+.button:active {
+  color: rgba(255,255,255,.3);
+}
+
+.button:focus, .button:hover {
+  background-color: #5eaa2f;
+}
 .page-nav__toggle {
   position: absolute;
   top: 0;
@@ -25,6 +32,10 @@
   color: $white-back;
   text-transform: uppercase;
   border: 0;
+
+  &:hover{
+    background-color:$green-hover;
+  }
 }
 
 .product__show-link {
@@ -122,5 +133,9 @@
     width: 170px;
     margin-left: 35px;
     padding-top: 10px;
+  }
+
+  .form__order {
+    width: 568px;
   }
 }

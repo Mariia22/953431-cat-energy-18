@@ -97,7 +97,17 @@
     color: $white-back;
   }
 
-  .site-menu__item--active::after {
-    bottom: 14px;
+  .site-menu__item--active {
+    position: relative;
+  }
+
+  .first--active::after {
+    position: absolute;
+    content: " ";
+    left: 0;
+    bottom: 16px;
+    width: 100%;
+    height: 2px;
+    background-color: $white-back;
   }
 }
