@@ -2,6 +2,13 @@
   text-align: center;
   padding-top: 39px;
   padding-bottom: 30px;
+  &:hover {
+    opacity: $opacity-hover;
+  }
+
+  &:active {
+    opacity: $opacity-active;
+  }
 }
 
 @media (min-width: $tablet) {

@@ -92,6 +92,16 @@
   left: 95px;
 }
 
+.diet__title{
+  &:hover {
+    opacity: $opacity-hover;
+  }
+
+  &:active {
+    opacity: $opacity-active;
+  }
+}
+
 @media (min-width: $tablet) {
   .diet__options {
     margin-top: 505px;
