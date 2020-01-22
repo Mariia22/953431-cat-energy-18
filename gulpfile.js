@@ -138,6 +138,6 @@ gulp.task("compress", function () {
 });
 gulp.task(
   "build",
-  gulp.series("del", "copy", "css", "compress", "sprite", "spritelogo", "html", "webp", "minify")
+  gulp.series("del", "copy", "css", "compress", "minify", "sprite", "spritelogo", "html", "webp")
 );
 gulp.task("start", gulp.series("build", "server"));

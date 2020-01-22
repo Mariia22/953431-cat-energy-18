@@ -1,5 +1,6 @@
 .header__border{
   border-bottom: 1px solid $grey-line;
+  padding-bottom: 15px;
 }
 .page-header {
   padding-top: 12px;
@@ -49,7 +50,6 @@
   .header {
     position: absolute;
     top: 30px;
-    left: 105px;
   }
 
   .page-header__logo--tablet, .page-header__logo--mobile{

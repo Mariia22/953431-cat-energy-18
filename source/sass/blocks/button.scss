@@ -8,7 +8,7 @@
 .page-nav__toggle {
   position: absolute;
   top: 0;
-  left: 234px;
+  left: 255px;
   z-index: 2;
   border: 0;
   display: block;
@@ -84,15 +84,17 @@
   display: block;
   width: 280px;
   margin-top: 298px;
-  margin-bottom: 22px;
-  padding-top: 13px;
-  padding-bottom: 11px;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
   color: $white-back;
   text-transform: uppercase;
   border: 0;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+.additional__order{
+  margin-bottom: 18px;
 }
 
 @media (min-width: $tablet) {
@@ -100,17 +102,22 @@
     display: none;
   }
 
+  .order {
+    width: 249px;
+}
+
   .program__order {
     font-family: "Oswald", "Arial", sans-serif;
     background-color: $green-back;
     display: block;
-    width: 280px;
-    margin-top: 298px;
+    width: 246px;
+    margin-top: 49px;
+    margin-left: 88px;
     margin-bottom: 22px;
     padding-top: 13px;
-    padding-bottom: 11px;
-    font-size: 14px;
-    line-height: 18px;
+    padding-bottom: 16px;
+    font-size: 20px;
+    line-height: 20px;
     text-align: center;
     color: $white-back;
     text-transform: uppercase;
@@ -119,6 +126,7 @@
 
   .additional__order {
     width: 633px;
+    margin-bottom: 30px;
   }
 
   .form__order {
@@ -132,9 +140,14 @@
 }
 
 @media (min-width: $desktop) {
+  .program__order {
+    margin-top: 51px;
+    margin-left: 80px;
+  }
+
   .order {
     width: 170px;
-    margin-left: 35px;
+    margin-left: 37px;
     padding-top: 10px;
   }
 
