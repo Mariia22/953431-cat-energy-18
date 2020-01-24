@@ -66,8 +66,9 @@
   background-color: $green-back;
   width: 280px;
   height: 40px;
+  margin-top: 5px;
   margin-right: 20px;
-  margin-bottom: 23px;
+  margin-bottom: 5px;
   margin-left: 20px;
   font-size: 16px;
   line-height: 20px;
@@ -133,9 +134,10 @@
     width: 285px;
     font-size: 20px;
     line-height: 20px;
-    margin-left: 5px;
+    margin-left: 0px;
     padding-top: 17px;
     padding-bottom: 35px;
+    padding-left: 0px;
   }
 }
 
@@ -151,6 +153,10 @@
     padding-top: 10px;
   }
 
+  .additional__order{
+      margin-bottom: 15px;
+      width: 245px;
+   }
   .product__show-link {
     width: 170px;
     margin-left: 35px;
@@ -159,5 +165,7 @@
 
   .form__order {
     width: 568px;
+    margin-left: 39px;
+    margin-top: 10px;
   }
 }
