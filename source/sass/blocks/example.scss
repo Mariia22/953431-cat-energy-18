@@ -249,9 +249,7 @@
     border-bottom: 1px dotted $grey-form;
     padding-bottom: 27px;
     padding-left: 0;
-  }
-  .example__button-before,
-  .example__button-after {
+
     &:hover {
       border-bottom: 1px solid $grey-form;
     }
@@ -356,8 +354,7 @@
     border-radius: 50%;
     background-color: $white-back;
     cursor: pointer;
-  }
-  .example__progress-toggle {
+
     &:hover {
       box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.25);
     }
@@ -386,15 +383,15 @@
   padding-bottom: 0;
   margin-bottom: 0;
 }
-  .example__container {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: 600px;
+.example__container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 600px;
   }
 
   .example__text {
@@ -404,7 +401,7 @@
     padding-top: 86px;
   }
 
-  .example__title{
+  .example__title {
     padding-top: 20px;
   }
 
@@ -422,9 +419,11 @@
     text-align: left;
     margin-left: 3px;
   }
+
   .example__price{
     margin-left: 55px;
   }
+
   .example__link {
     width: 142px;
     background-color: $grey-back;
@@ -469,19 +468,21 @@
     }
   }
 
-  .example__progress{
+  .example__progress {
     margin-top: 0;
     padding-top: 0;
-
   }
-  .example__slider{
+
+  .example__slider {
     padding-top: 3px;
     margin-left: 100px;
   }
+
   .example__background {
     height: 462px;
     background-image: linear-gradient(to right, $grey-back 0, $grey-back 74%, $grey-background 75%, $grey-background 100%);
   }
+
   .example__progress-toggle {
     left: 75%;
     top: 532px;

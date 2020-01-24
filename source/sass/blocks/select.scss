@@ -1,11 +1,13 @@
-.select{
+.select {
   display: flex;
   flex-direction: column;
 }
+
 .select__title {
   margin-bottom: 25px;
   margin-top: 13px;
 }
+
 .select__text {
   color: $text-color;
   text-transform: uppercase;
@@ -13,9 +15,9 @@
   width: 240px;
 }
 
-@media(min-width: $tablet){
+@media (min-width: $tablet) {
 
-  .select__title{
+  .select__title {
     font-size: 60px;
     line-height: 60px;
     margin-top: 33px;
@@ -30,13 +32,13 @@
     margin-left: 40px;
   }
 }
-@media(min-width: $desktop){
+@media (min-width: $desktop) {
 
   .select__title {
     margin-top: 190px;
   }
 
-  .select__text{
+  .select__text {
     margin-left: 0px;
   }
 }

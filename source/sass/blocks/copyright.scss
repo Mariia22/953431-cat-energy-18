@@ -35,12 +35,13 @@
   .copyright__link {
     padding-top: 1px;
     margin-right: 51px;
-    &:hover {
-      opacity: $opacity-hover;
+
+  &:hover {
+    opacity: $opacity-hover;
     }
 
-    &:active {
-      opacity: $opacity-active;
+   &:active {
+    opacity: $opacity-active;
     }
   }
 
@@ -48,9 +49,11 @@
     right: -4px;
     top: 22px;
     fill: $grey-logo;
+
   &:hover {
     fill: $green-back;
   }
+
   &:active {
     opacity: $opacity-active;
   }

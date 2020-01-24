@@ -81,6 +81,14 @@
   line-height: 16px;
   color: $text-color;
   text-transform: uppercase;
+
+  &:hover {
+    opacity: $opacity-hover;
+  }
+
+  &:active {
+    opacity: $opacity-active;
+  }
 }
 
 .diet__title::after {
@@ -91,16 +99,6 @@
   height: 12px;
   top: 2px;
   left: 95px;
-}
-
-.diet__title{
-  &:hover {
-    opacity: $opacity-hover;
-  }
-
-  &:active {
-    opacity: $opacity-active;
-  }
 }
 
 @media (min-width: $tablet) {

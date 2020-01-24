@@ -1,7 +1,7 @@
 .advantages__list {
   display: flex;
   flex-direction: column;
-  margin-bottom:28px;
+  margin-bottom: 28px;
 }
 
 .advantages__item {
@@ -54,9 +54,10 @@
     margin-bottom: 83px;
   }
 
-  .advantages__item:first-child{
+  .advantages__item:first-child {
     margin-bottom: 118px;
   }
+
   .advantages__item::after {
     counter-increment: idItem;
     content: counter(idItem);
@@ -105,7 +106,7 @@
   }
 
   .advantages__item:first-child {
-    margin-bottom: 90px;
+      margin-bottom: 90px;
 }
 
   .advantages__title {

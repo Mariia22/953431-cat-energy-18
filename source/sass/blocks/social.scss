@@ -15,7 +15,6 @@
 
 .social__link {
   position: relative;
-
 }
 
 .social__link--instagram {
@@ -28,9 +27,11 @@
 
 .social__link-foto {
   fill: $grey-logo;
+
   &:hover {
     fill: $green-back;
   }
+
   &:active {
     opacity: $opacity-active;
   }
@@ -43,7 +44,7 @@
     padding-bottom: 31px;
     padding-left: 60px;
     margin-left: 0;
-  margin-right: 0;
+    margin-right: 0;
   }
 
   .social__link--vkontakte {

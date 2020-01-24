@@ -1,6 +1,7 @@
 .site-menu {
   width: 280px;
 }
+
 .site-menu__item {
   display: block;
   padding-top: 24px;
@@ -14,9 +15,11 @@
 .site-menu__item:first-child {
   border-top: 1px solid $grey-line;
 }
+
 .site-menu__item:last-child {
   border-bottom: none;
 }
+
 .site-menu__link {
   font-size: 20px;
   line-height: 20px;
@@ -28,6 +31,7 @@
 }
 
 .site-menu a[href] {
+
   &:hover {
     opacity: $opacity-hover;
   }
@@ -38,6 +42,7 @@
 }
 
 @media (min-width: $tablet) {
+  
   .site-menu {
     display: flex;
     flex-direction: row;

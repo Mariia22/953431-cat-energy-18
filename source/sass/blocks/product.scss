@@ -4,6 +4,7 @@
   position: relative;
   overflow: hidden;
 }
+
 .product::after {
   position: absolute;
   content: "";
@@ -175,7 +176,6 @@
     font-size: 20px;
     line-height: 20px;
     width: 135px;
-    margin-bottom: 17px;
     margin: 10px;
   }
 
@@ -214,8 +214,9 @@
   }
 
   .product__image {
-  bottom: 300px;
+    bottom: 300px;
 }
+
   .product__show-image {
     margin-top: 0;
     margin-bottom: 46px;
