@@ -350,10 +350,9 @@
     font-size: 36px;
     line-height: 36px;
     color: $black-two;
-    margin-bottom: 20px;
+    margin-bottom: 74px;
     padding-left: 50px;
     padding-right: 50px;
-    margin-bottom: 74px;
     margin-top: 75px;
     margin-left: 17px;
   }
@@ -503,7 +502,8 @@
     margin-bottom: 22px;
   }
 }
-@media (min-width: $desktop){
+
+@media (min-width: $desktop) {
   .form__container {
     display: flex;
   }
@@ -615,16 +615,16 @@
 
   .extra__item {
     width: 245px;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .extra__title {
     margin-top: 72px;
     margin-bottom: 56px;
-}
+  }
 
   .form__note {
     margin-left: 66px;
     margin-top: 26px;
-}
+  }
 }
