@@ -4,11 +4,11 @@
 
 .additional::before {
   content: "";
-  width: 53px;
+  width: 300%;
   height: 3px;
   position: absolute;
-  top: 44px;
-  right: 2px;
+  top: 15px;
+  left: 260px;
   z-index: -1;
   background-color: $green-back;
 }
@@ -16,13 +16,15 @@
 .additional__title {
   line-height: 24px;
   font-size: 24px;
-  padding-top: 31px;
-  padding-bottom: 30px;
+  margin-bottom: 37px;
 }
 
 .goods__info {
   margin-bottom: 14px;
   width: 280px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
 }
 
 .goods__description-cell {
@@ -36,12 +38,42 @@
 }
 
 .goods__item {
-  border-top: 1px solid $grey-line;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.goods__item:last-child {
-  border-bottom: 1px solid $grey-line;
+.goods__title {
+  margin-top: 12px;
+  margin-bottom: 10px;
 }
+
+.goods__item::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -170px;
+  height: 1px;
+  width: 300%;
+  background-color: $grey-line;
+  overflow: hidden;
+}
+
+.present {
+  position: relative;
+}
+
+.present::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -170px;
+  height: 1px;
+  width: 300%;
+  background-color: $grey-line;
+  overflow: hidden;
+}
+
 
 @media (min-width: $tablet) {
   .additional {
@@ -54,6 +86,8 @@
     padding-top: 0;
     padding-left: 36px;
     padding-right: 36px;
+    margin-top: 17px;
+    margin-bottom: 80px;
   }
 
   .additional::before {
@@ -72,6 +106,10 @@
     background-color: $green-back;
   }
 
+  .goods {
+    border-bottom: 1px solid $grey-line;
+  }
+
   .goods__item {
     display: flex;
     justify-content: space-between;
@@ -86,11 +124,13 @@
     font-size: 20px;
     line-height: 20px;
     width: 30%;
-    margin-bottom: 25px;
+    margin-bottom: 0;
+    margin-top: 24px;
   }
 
   .goods__info {
-    margin-top: 33px;
+    margin-top: 23px;
+    margin-bottom: 21px;
     width: 70%;
   }
 
@@ -99,6 +139,15 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+  }
+
+  .goods__item::after {
+    left: 0;
+    width: 708px;
+  }
+
+  .present::after {
+    width: 0;
   }
 }
 
@@ -113,8 +162,17 @@
     width: 245px;
   }
 
+  .additional__title {
+    margin-top: 35px;
+    padding-left: 0;
+  }
+
+  .additional::after {
+    width: 69%;
+  }
+
   .goods {
-    width: 62%;
+    width: 90%;
     margin-right: 80px;
   }
 
@@ -132,11 +190,26 @@
   }
 
   .goods__info {
-    margin-top: 33px;
-    width: 35%;
+    margin-top: 25px;
+    margin-bottom: 0;
+    width: 48%;
   }
 
   .goods__title {
     width: 20%;
+  }
+
+  .goods__description-cell {
+    text-align: left;
+    padding-left: 145px;
+  }
+
+  .goods__description-cell:last-child {
+    text-align: right;
+    padding-left: 0;
+  }
+
+  .goods__item::after {
+    width: 895px;
   }
 }

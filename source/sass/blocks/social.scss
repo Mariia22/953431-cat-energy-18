@@ -1,7 +1,8 @@
 .social {
-  border-bottom: 1px solid $grey-form;
   padding-top: 22px;
   padding-bottom: 17px;
+  border-bottom: 1px solid $grey-form;
+  border-top: 1px solid $grey-form;
 }
 
 .social__list {
@@ -26,6 +27,14 @@
 
 .social__link-foto {
   fill: $grey-logo;
+
+  &:hover {
+    fill: $green-back;
+  }
+
+  &:active {
+    opacity: $opacity-active;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -34,6 +43,8 @@
     padding-top: 39px;
     padding-bottom: 31px;
     padding-left: 60px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .social__link--vkontakte {

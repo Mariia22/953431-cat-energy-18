@@ -1,0 +1,43 @@
+.select {
+  display: flex;
+  flex-direction: column;
+}
+
+.select__title {
+  margin-bottom: 25px;
+  margin-top: 13px;
+}
+
+.select__text {
+  color: $text-color;
+  text-transform: uppercase;
+  margin-bottom: 39px;
+  width: 240px;
+}
+
+@media (min-width: $tablet) {
+  .select__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 33px;
+    margin-bottom: 55px;
+  }
+
+  .select__text {
+    width: 350px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 65px;
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .select__title {
+    margin-top: 190px;
+  }
+
+  .select__text {
+    margin-left: 0;
+  }
+}

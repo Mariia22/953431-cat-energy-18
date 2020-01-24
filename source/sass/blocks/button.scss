@@ -1,7 +1,16 @@
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button:focus,
+.button:hover {
+  background-color: #5eaa2f;
+}
+
 .page-nav__toggle {
   position: absolute;
   top: 0;
-  left: 234px;
+  left: 255px;
   z-index: 2;
   border: 0;
   display: block;
@@ -25,6 +34,10 @@
   color: $white-back;
   text-transform: uppercase;
   border: 0;
+
+  &:hover {
+    background-color: $green-hover;
+  }
 }
 
 .product__show-link {
@@ -40,20 +53,24 @@
   color: $grey-text;
   text-transform: uppercase;
   border: 0;
+
+  &:hover {
+    background-color: $grey-hover;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 .form__order {
   background-color: $green-back;
   width: 280px;
   height: 40px;
-  margin-top: 34px;
+  margin-top: 5px;
   margin-right: 20px;
-  margin-bottom: 23px;
+  margin-bottom: 5px;
   margin-left: 20px;
-  padding-top: 13px;
-  padding-right: 50px;
-  padding-bottom: 12px;
-  padding-left: 57px;
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
@@ -69,15 +86,18 @@
   display: block;
   width: 280px;
   margin-top: 298px;
-  margin-bottom: 22px;
-  padding-top: 13px;
-  padding-bottom: 11px;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
   color: $white-back;
   text-transform: uppercase;
   border: 0;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.additional__order {
+  margin-bottom: 18px;
 }
 
 @media (min-width: $tablet) {
@@ -85,17 +105,22 @@
     display: none;
   }
 
+  .order {
+    width: 249px;
+  }
+
   .program__order {
     font-family: "Oswald", "Arial", sans-serif;
     background-color: $green-back;
     display: block;
-    width: 280px;
-    margin-top: 298px;
+    width: 246px;
+    margin-top: 49px;
+    margin-left: 88px;
     margin-bottom: 22px;
     padding-top: 13px;
-    padding-bottom: 11px;
-    font-size: 14px;
-    line-height: 18px;
+    padding-bottom: 16px;
+    font-size: 20px;
+    line-height: 20px;
     text-align: center;
     color: $white-back;
     text-transform: uppercase;
@@ -104,19 +129,46 @@
 
   .additional__order {
     width: 633px;
+    margin-bottom: 30px;
+  }
+
+  .form__order {
+    width: 285px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 0;
+    padding-top: 17px;
+    padding-bottom: 35px;
+    padding-left: 0;
   }
 }
 
 @media (min-width: $desktop) {
+  .program__order {
+    margin-top: 51px;
+    margin-left: 80px;
+  }
+
   .order {
     width: 170px;
-    margin-left: 35px;
+    margin-left: 37px;
     padding-top: 10px;
+  }
+
+  .additional__order {
+    margin-bottom: 15px;
+    width: 245px;
   }
 
   .product__show-link {
     width: 170px;
     margin-left: 35px;
     padding-top: 10px;
+  }
+
+  .form__order {
+    width: 568px;
+    margin-left: 39px;
+    margin-top: 10px;
   }
 }

@@ -1,11 +1,11 @@
-let navMain = document.querySelector(".page-nav");
-let navToggle = document.querySelector(".page-nav__toggle");
-let beforeButton = document.querySelector(".example__button-before");
-let afterButton = document.querySelector(".example__button-after");
-let beforePage = document.querySelector(".example__photo-before");
-let afterPage = document.querySelector(".example__photo-after");
-let scale = document.querySelector(".example__scale");
-let map;
+var navMain = document.querySelector(".page-nav");
+var navToggle = document.querySelector(".page-nav__toggle");
+var beforeButton = document.querySelector(".example__button-before");
+var afterButton = document.querySelector(".example__button-after");
+var beforePage = document.querySelector(".example__photo-before");
+var afterPage = document.querySelector(".example__photo-after");
+var scale = document.querySelector(".example__scale");
+var map;
 
 navMain.classList.remove("page-nav--nojs");
 

@@ -9,6 +9,7 @@ body {
   color: $grey-text;
   background-color: $white-back;
   min-width: 320px;
+  overflow-x: hidden;
 }
 
 img {

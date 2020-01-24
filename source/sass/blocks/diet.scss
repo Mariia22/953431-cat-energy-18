@@ -1,6 +1,7 @@
 .diet__options {
   display: flex;
   flex-direction: column;
+  margin-top: 22px;
 }
 
 .diet__item {
@@ -80,6 +81,14 @@
   line-height: 16px;
   color: $text-color;
   text-transform: uppercase;
+
+  &:hover {
+    opacity: $opacity-hover;
+  }
+
+  &:active {
+    opacity: $opacity-active;
+  }
 }
 
 .diet__title::after {
@@ -176,9 +185,9 @@
   }
 
   .diet__item {
-    width: 495px;
-    padding-top: 73px;
-    padding-left: 42px;
+    width: 500px;
+    padding-top: 75px;
+    padding-left: 52px;
     margin-bottom: 0;
   }
 

@@ -17,3 +17,13 @@
     padding-bottom: 22px;
   }
 }
+
+@media (min-width: $desktop) {
+  .page-footer__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 8px;
+    padding-bottom: 22px;
+  }
+}

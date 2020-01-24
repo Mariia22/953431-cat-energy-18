@@ -1,12 +1,20 @@
 .logo {
   text-align: center;
-  padding-top: 39px;
+  padding-top: 49px;
   padding-bottom: 30px;
-  border-bottom: 1px solid $grey-form;
+
+  &:hover {
+    opacity: $opacity-hover;
+  }
+
+  &:active {
+    opacity: $opacity-active;
+  }
 }
 
 @media (min-width: $tablet) {
   .logo {
     border-bottom: 0;
+    padding-top: 40px;
   }
 }
