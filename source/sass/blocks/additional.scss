@@ -43,7 +43,7 @@
   flex-wrap: wrap;
 }
 
-.goods__title{
+.goods__title {
   margin-top: 12px;
   margin-bottom: 10px;
 }
@@ -146,8 +146,8 @@
     width: 708px;
   }
 
-  .present::after{
-    width: 0px;
+  .present::after {
+    width: 0;
   }
 }
 
@@ -164,10 +164,10 @@
 
   .additional__title {
     margin-top: 35px;
-    padding-left: 0px;
+    padding-left: 0;
   }
 
-  .additional::after{
+  .additional::after {
     width: 69%;
   }
 

@@ -356,7 +356,7 @@
     cursor: pointer;
 
     &:hover {
-      box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.25);
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
     }
 
     &:active {
@@ -379,19 +379,19 @@
 }
 
 @media (min-width: $desktop) {
-.example {
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-.example__container {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  height: 600px;
+  .example {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .example__container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 600px;
   }
 
   .example__text {

@@ -13,14 +13,13 @@
 }
 
 @media (min-width: $tablet) {
-.contact__map {
-  height: 396px;
+  .contact__map {
+    height: 396px;
+  }
 }
 
-}
 @media (min-width: $desktop) {
   .contact__map {
     height: 415px;
   }
-
-  }
+}

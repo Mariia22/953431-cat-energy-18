@@ -9,9 +9,8 @@
 }
 
 .page-header__logo--img {
-
-  &:hover{
-  opacity: $opacity-hover;
+  &:hover {
+    opacity: $opacity-hover;
   }
 
   &:active {
@@ -19,7 +18,8 @@
   }
 }
 
-.page-header__logo--tablet, .page-header__logo--desktop {
+.page-header__logo--tablet,
+.page-header__logo--desktop {
   display: none;
 }
 
@@ -36,7 +36,8 @@
     padding-top: 24px;
   }
 
-  .page-header__logo--mobile, .page-header__logo--desktop {
+  .page-header__logo--mobile,
+  .page-header__logo--desktop {
     display: none;
   }
 
@@ -55,7 +56,8 @@
     top: 30px;
   }
 
-  .page-header__logo--tablet, .page-header__logo--mobile {
+  .page-header__logo--tablet,
+  .page-header__logo--mobile {
     display: none;
   }
 

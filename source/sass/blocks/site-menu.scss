@@ -31,7 +31,6 @@
 }
 
 .site-menu a[href] {
-
   &:hover {
     opacity: $opacity-hover;
   }
@@ -81,6 +80,7 @@
     line-height: 25px;
     font-weight: normal;
   }
+
   .site-menu__border {
     border-bottom: none;
   }
@@ -104,7 +104,8 @@
   .site-menu__item--active {
     position: relative;
   }
-  .site-menu__item--active::after{
+
+  .site-menu__item--active::after {
     bottom: 14px;
   }
 
